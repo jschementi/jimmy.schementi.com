@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Jimmy.Schementi.com</title>
+    <script src="http://code.jquery.com/jquery-1.4.1.min.js" type="text/javascript"></script> 
+    <style type="text/css" media="screen">
+      body {
+        padding: 0; margin: 0;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        background-color: #eee;
+      }
+      
+      #page {
+        width: 500px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      #header {
+        padding-top: 2em;
+      }
+
+      #header h1 {
+        font-size: 3.0em;
+        border-bottom: 5px solid black;
+        padding: 0;
+        margin: 0;
+        font-variant: small-caps;
+        text-align: center;
+      }
+
+      #header ul#main-menu {
+        padding: 0; margin: 0;
+        position: relative;
+        top: -1px;
+        padding-bottom: 6px;
+        text-align: center;
+      }
+      #header ul#main-menu li {
+        display: inline;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+      }
+      #header ul#main-menu li a {
+        font-size: 2.0em;
+        color: black;
+        text-decoration: none;
+        padding: 0 5px;
+        margin: 0;
+        font-variant: small-caps;
+      }
+      #header ul#main-menu li a:hover {
+        border-top: 5px solid orange;
+      }
+      #header ul#main-menu li a#active {
+        border-top: 5px solid orange;
+      }
+
+      #body {
+        padding: 1em;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.topic').hide()
+      })
+    </script>
+  </head>
+  <body>
+
+    <div id="page">
+
+      <div id="header">
+        <h1>jimmy schementi</h1>
+        <ul id="main-menu">
+          <li><a href="#life">me</a></li>
+          <li><a href="#code" id="active">code</a></li>
+          <li><a href="#writing">write</a></li>
+          <li><a href="#music">music</a></li>
+          <li><a href="#photos">photo</a></li>
+          <li><a href="#art">art</a></li>
+        </ul>
+      </div>
+
+      <div id="body">
+
+        <div id='life' class='topic'>
+          <a name="life"></a> 
+          <h2>Life</h2>
+          <p>
+            About me
+          </p>
+          <ul>
+            <li><a href="http://www.linkedin.com/in/jschementi">LinkedIn</a>: professional network</li>
+            <li><a href="http://www.facebook.com/profile.php?id=29100024">Facebook</a>: personal network</li>
+          </ul>
+        </div>
+
+        <div id="code" class='topic'>  
+          <a name="code"></a>
+          <h2>Code</h2>
+          <p>
+            <a href="http://github.com/jschementi">GitHub</a> and other projects. Here are my most recent projects:
+          </p>
+          <h3><a href="http://ironruby.net">IronRuby</a></h3>
+          <p>
+            About IronRuby
+          </p>
+          <h3><a href="http://cite.me">Cite.me</a></h3>
+          <p>
+            About SourceAid
+          </p>
+          <h3><a href="http://assistment.org">Assistment</a></h3>
+          <p>
+            About Assistment
+          </p>
+        </div>
+
+        <div id="writing" class="topic">
+          <a name="writing"></a>
+          <h2>Writing / Reading</h2>
+          <p>I write, here's where.</p>
+          <ul> 
+            <li><a href="http://jimmy.schementi.com/blog">blog</a>: mainly technical</li>
+            <li><a href="http://twitter.com/jschementi">@jschementi</a>: 140 characters</li>
+            <li><a href="http://del.icio.us/jschementi">Bookmarks</a>: this I like from the web</li>
+          </ul>
+        </div>
+
+        <div id="music" class="topic">
+          <a name="music"></a>
+          <h2>Music</h2>
+          <p>
+            About the music I write
+          </p>
+          <ul>
+            <li><a href="http://www.purevolume.com/jimmyschementi">what I write</a></li>
+            <li><a href="http://www.pandora.com/people/jschementi">what I listen to</a></li>
+          </ul>
+        </div>
+
+        <div id="photos" class="topic">
+          <a name="photos"></a>
+          <h2>Photos</h2>
+          <p>
+            I like taking photos
+          </p>
+          <ul>
+            <li><a href="http://www.flickr.com/photos/jschementi/">Flickr</a></li>
+          </ul>
+        </div>
+
+        <div id="art" class="topic">
+          <a name="art"></a>
+          <h2>Art</h2>
+          <p>I used to paint and draw a lot</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
