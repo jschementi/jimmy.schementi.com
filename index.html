@@ -10,13 +10,13 @@
         font-family: helvetica, arial, sans-serif;
         font-size: 12px;
         text-align: center;
-        background-color: #eee;
+        background-color: #efefef;
       }
       
       #page {
-        width: 500px;
         margin: 0 auto;
         text-align: left;
+        margin-left: 30px;
       }
 
       #header {
@@ -24,49 +24,137 @@
       }
 
       #header h1 {
-        font-size: 3.0em;
-        border-bottom: 5px solid black;
-        padding: 0;
+        display: inline;
+        font-size: 5.79em;
+        font-weight: normal;
+        letter-spacing: -0.05em;
         margin: 0;
-        font-variant: small-caps;
-        text-align: center;
+        padding: 0;
+        z-index: 2;
+      }
+      #header h1 a {
+        color: black;
+        text-decoration: none;
       }
 
       #header ul#main-menu {
-        padding: 0; margin: 0;
+        padding: 0; 
+        margin: 21px 0 0;
         position: relative;
-        top: -1px;
-        padding-bottom: 6px;
-        text-align: center;
+        z-index: 1;
+        display: inline;
       }
       #header ul#main-menu li {
         display: inline;
         list-style: none outside none;
         margin: 0;
         padding: 0;
+        font-size: 2.5em
+      }
+      #header ul#main-menu li.arrow {
+        font-size: 5.7em;
+        margin-left: 20px;
+        margin-right: 10px;
       }
       #header ul#main-menu li a {
-        font-size: 2.0em;
         color: black;
         text-decoration: none;
         padding: 0 5px;
         margin: 0;
-        font-variant: small-caps;
       }
       #header ul#main-menu li a:hover {
-        border-top: 5px solid orange;
+        color: #444;
       }
       #header ul#main-menu li a#active {
-        border-top: 5px solid orange;
+        font-size: 1.5em;
+      }
+      #header ul#main-menu li a:hover#active {
+        color: black;
       }
 
       #body {
         padding: 1em;
       }
+
+      .article {
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+      .article h3 {
+        margin: 0;
+      }
+
+      .date {
+        border: 1px solid black;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 44px;
+        height: 44px;
+        padding: 4px;
+        margin-right: 10px;
+      }
+      .date .month {
+        font-size: 0.9em;
+        line-height: 0.5em;
+        display: block;
+      }
+      .date .day {
+        font-size: 2.4em;
+        display: block;
+      }
+      .date .year {
+        font-size: 0.8em;
+        line-height: 0.5em;
+        display: block;
+      }
+
+      .section {
+        float: left;
+        border: 1px solid gray;
+        margin-bottom: 1%;
+        margin-left: 1%;
+      }
+      .half {
+        width: 48%;
+      }
+      .first {
+        margin-left: 0;
+        clear: both;
+      }
+      .third {
+        width: 31.5%;
+      }
+      .quarter {
+        width: 23%;
+      }
+      .three-forths {
+        width: 73%;
+      }
+
+
     </style>
     <script type="text/javascript">
+      var navigateTo = function(topic) {
+        $('.topic').hide();
+        $(topic).show();
+        $('#main-menu a').removeAttr('id');
+        $('#main-menu a[href=' + topic + ']').attr('id', 'active');
+      }
+    
       $(document).ready(function() {
-        $('.topic').hide()
+        $('.topic').hide();
+        if (location.hash.length == 0) {
+          navigateTo('#me');
+        } else {
+          navigateTo(location.hash)
+        }
+        var onMenuClick = function() {
+          navigateTo($(this).attr('href'));
+        }
+        $('#main-menu a').click(onMenuClick);
+        $('#header h1 a').click(onMenuClick);
       })
     </script>
   </head>
@@ -75,10 +163,10 @@
     <div id="page">
 
       <div id="header">
-        <h1>jimmy schementi</h1>
+        <h1><a href="#home">Jimmy Schementi</a></h1>
         <ul id="main-menu">
-          <li><a href="#life">me</a></li>
-          <li><a href="#code" id="active">code</a></li>
+          <li class='arrow'>&rsaquo;</li>
+          <li><a href="#code">code</a></li>
           <li><a href="#writing">write</a></li>
           <li><a href="#music">music</a></li>
           <li><a href="#photos">photo</a></li>
@@ -88,16 +176,80 @@
 
       <div id="body">
 
-        <div id='life' class='topic'>
-          <a name="life"></a> 
-          <h2>Life</h2>
-          <p>
-            About me
-          </p>
+        <div id='home' class='topic'>
+          <a name="home"></a>
+
+          <div id="home-writing" class='section half first'>
+            <div class='article'>
+              <span class='date'>
+                <span class='month'>Mar</span>
+                <span class='day'>24</span>
+                <span class='year'>2010</span>
+              </span>
+              <h3 class='title'><a href="">MIX10 - IronRuby and IronPython - Part 1 (Intro)</a></h3>
+              <div class="body">
+                This past week I had the pleasure of attending and speaking at MIX10 in Las Vegas
+                about using IronRuby and IronPython on the web. If you're a TV-person instead of
+                a reading-person, here's a video of the talk ...
+              </div>
+              <div class="actions">
+                <a href="">Read more &raquo;</a>
+              </div>
+            </div>
+
+            <div class='article'>
+              <span class='date'>
+                <span class='month'>Mar</span>
+                <span class='day'>5</span>
+                <span class='year'>2010</span>
+              </span>
+              <h3 class='title'><a href=''>PyCon 2010: Python in the browser</a></h3>
+              <div class='body'>
+                Last weekend I was very fortunate to speak at PyCon 2010 in Atlanta about writing 
+                browser-based applications in Python. A majority of the IronPython team was also there;
+                Dino Viehland spoke about IronPython Tooling  ...
+              </div>
+              <div class="actions">
+                <a href="">Read more &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="home-projects" class='section quarter'>
+            <h2>Projects</h2>
+            <h3><a href="http://ironruby.net">IronRuby</a></h3>
+            <p>
+              About IronRuby
+            </p>
+            <h3><a href="http://cite.me">Cite.me</a></h3>
+            <p>
+              About SourceAid
+            </p>
+            <h3><a href="http://assistment.org">Assistment</a></h3>
+            <p>
+              About Assistment
+            </p>
+          </div>
+
+          <div id="home-connections" class='section quarter'>
           <ul>
             <li><a href="http://www.linkedin.com/in/jschementi">LinkedIn</a>: professional network</li>
             <li><a href="http://www.facebook.com/profile.php?id=29100024">Facebook</a>: personal network</li>
           </ul>
+          </div>
+
+          <div id="home-photos" class='section third first'>
+            TODO flickr photos
+          </div>
+
+          <div id='home-music' class='section third'>
+            TODO music
+          </div>
+
+          <div id='home-art' class='section third'>
+            TODO paintings/sketches
+          </div>
+
         </div>
 
         <div id="code" class='topic'>  
@@ -138,7 +290,7 @@
             About the music I write
           </p>
           <ul>
-            <li><a href="http://www.purevolume.com/jimmyschementi">what I write</a></li>
+            <li><a href="http://www.purevolume.com/jimmyschementi">what I</a><a href="http://www.myspace.com/jimmyschementi">write</a></li>
             <li><a href="http://www.pandora.com/people/jschementi">what I listen to</a></li>
           </ul>
         </div>
