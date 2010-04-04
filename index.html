@@ -6,6 +6,9 @@
     <!--<script src="http://code.jquery.com/jquery-1.4.1.min.js" type="text/javascript"></script> -->
     <script src="jquery-1.4.1.min.js" type="text/javascript"></script>
     <style type="text/css" media="screen">
+    
+      /* global styles */
+    
       body {
         padding: 0; margin: 0;
         font-family: helvetica, arial, sans-serif;
@@ -13,6 +16,10 @@
         text-align: center;
         background-color: white;
         color: #111;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
       }
 
       a {
@@ -26,130 +33,195 @@
       #page {
         margin: 0 auto;
         text-align: left;
-        margin-left: 30px;
       }
+
+      /* header styles */
 
       #header {
         padding-top: 2em;
+        padding-left: 2em;
       }
+  
+      /* site title */
+  
+        #header h1 {
+          float: left;
+          z-index: 1;
+          font-size: 5.79em;
+          letter-spacing: -0.05em;
+          margin: 0;
+          padding: 0;
+        }
+        #header h1 a {
+          color: black;
+          text-decoration: none;
+        }
+        #header h1 a:hover {
+          color: #444;
+        }
 
-      #header h1 {
-        display: inline;
-        font-size: 5.79em;
-        font-weight: normal;
-        letter-spacing: -0.05em;
-        margin: 0;
-        padding: 0;
-        z-index: 2;
-      }
-      #header h1 a {
-        color: black;
-        text-decoration: none;
-      }
-      #header h1 a:hover {
-        color: #444;
-      }
+      /* site main menu */
+  
+        ul#main-menu {
+          padding: 0;
+          margin: 0;
+          position: relative;
+          z-index: 2;
+          float: left;
+        }
+        ul#main-menu li {
+          display: inline;
+          list-style: none outside none;
+          margin: 0;
+          padding: 0;
+          font-size: 2.5em;
+        }
+        ul#main-menu li.arrow {
+          font-size: 5.7em;
+          margin-left: 0.2em;
+          margin-right: 0.1em;
+          position: relative;
+          top: 0.02em;
+        }
+        ul#main-menu li a {
+          text-decoration: none;
+          padding: 0.05em 0.25em;
+          position: relative;
+          top: -0.25em;
+          background-color: #FF9900;
+          color: white;
+          margin: 0.05em;
+          letter-spacing: -0.02em;
+        }
+        ul#main-menu li a:hover {
+          background-color: #FFaa00;
+        }
+        ul#main-menu a#active {
+          font-size: 1.5em;
+          position: relative;
+          top: -0.1em;
+          background-color: transparent;
+          color: black;
+        }
 
-      #header ul#main-menu {
-        padding: 0; 
-        margin: 21px 0 0;
-        position: relative;
-        z-index: 1;
-        display: inline;
-      }
-      #header ul#main-menu li {
-        display: inline;
-        list-style: none outside none;
-        margin: 0;
-        padding: 0;
-        font-size: 2.5em
-      }
-      #header ul#main-menu li.arrow {
-        font-size: 5.7em;
-        margin-left: 20px;
-        margin-right: 10px;
-      }
-      #header ul#main-menu li a {
-        color: black;
-        text-decoration: none;
-        padding: 0 5px;
-        margin: 0;
-      }
-      #navigation {
-      }
-      #navigation #main-menu li a:hover {
-        color: #444;
-      }
-      #main-menu a#active {
-        font-size: 1.5em;
-      }
-      #navigation #main-menu li a:hover#active {
-        color: black;
-      }
+      /* body */
 
       #body {
         padding: 1em;
+        margin-left: 2em;
       }
 
-      .section {
-        float: left;
-        margin-bottom: 1%;
-        margin-left: 1%;
-      }
-      .half {
-        width: 48%;
-      }
-      .first {
-        margin-left: 0;
-        clear: both;
-      }
-      .third {
-        width: 31.5%;
-      }
-      .quarter {
-        width: 23%;
-      }
-      .three-forths {
-        width: 73%;
+      .topic {
+        padding-top: 1em;
       }
 
-      .section h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 2.5em;
-      }
+      /* section */
+  
+        .section {
+          float: left;
+          margin-bottom: 1%;
+          margin-left: 1%;
+          padding-bottom: 1em;
+        }
+        .half {
+          width: 49%;
+        }
+        .first {
+          margin-left: 0;
+          clear: both;
+        }
+        .last {
+          
+        }
+        .clear {
+          clear: both;
+          margin: 0; padding: 0;
+          position: relative;
+          height: 0;
+        }
+        .third {
+          width: 32%;
+        }
+        .quarter {
+          width: 24%;
+        }
+        .three-forths {
+          width: 74%;
+        }
 
-      .islands {
-        margin-top: 10px;
-      }
-      #home-writing .islands {
-        border-left: 10px solid #ddd;
-      }
-      .area {
-        padding: 0 10px 10px;
-      }
-      .island {
-        padding: 10px;
-      }
-      .island:hover {
-        cursor: pointer;
-      }
+        .area:first-child, .island:first-child {
+          padding-top: 1em;
+        }
+        
+        .area:last-child, .island:last-child {
+          padding-bottom: 1em;
+        }
+        
+        .area, .island {
+          padding: 0 1em 2em 0;
+        }
+        .island:hover {
+          cursor: pointer;
+        }
 
-      .article h3 {
-        margin: 0;
-        font-size: 1.5em;
-      }
 
-      #home-projects h3 {
-        margin: 0;
-      }
-      #home-projects h3 a img {
-        border: 0;
-      }
-      #home-projects .project p {
-        margin: 0px;
-        margin-top: 10px;
-      }
+      /* section headings */
+  
+        .section h2 {
+          letter-spacing: -0.02em;
+          margin: 0;
+          font-size: 2.5em;
+        }
+
+
+
+      /* writing section */
+  
+  
+        #home-writing .islands {
+          margin-top: 1em;
+        }
+        #home-writing .article .body {
+          color:gray;
+          font-size:1.5em;
+          letter-spacing: -0.03em;
+        }
+        #home-writing .article h3 {
+          margin: 0;
+          font-size: 2em;
+          letter-spacing: -0.05em;
+          
+        }
+        #home-writing .article h3 a {
+          padding: 0.2em 0em 0.1em;
+        }
+        #home-writing .article h3 a:hover {
+          color: white;
+          background-color: #0077CC;
+          text-decoration: none;
+        }
+        #home-writing .article .tags {
+          font-size: 1em;
+          letter-spacing: -0.015em;
+          margin-top: 1em;
+        }
+
+      /* projects section */
+  
+        #home-projects h3 {
+          margin: 0;
+        }
+        #home-projects h3 a img {
+          border: 0;
+        }
+        #home-projects .project p {
+          color: gray;
+          font-size: 1.4em;
+          letter-spacing: -0.02em;
+          margin: 0.5em 0.25em 0;
+          padding-left: 0.5em;
+          border-left: 0.5em solid #ccc;
+        }
 
     </style>
     <script type="text/javascript">
@@ -158,6 +230,8 @@
         $(topic).show();
         $('#navigation a').removeAttr('id');
         $('#navigation a[href=' + topic + ']').attr('id', 'active');
+        window.location.hash = topic;
+        document.getElementsByName('very-top')[0].scrollIntoView(true);
       }
     
       $(document).ready(function() {
@@ -169,8 +243,8 @@
         }
         $('#navigation a').click(function() {
           navigateTo($(this).attr('href'));
-          }
-        );
+          return false;
+        });
         $('.island').click(function() {
           window.location.href = $('h3 a', $(this)).attr('href')
         });
@@ -179,6 +253,7 @@
     </script>
   </head>
   <body>
+    <a name="very-top"></a>
 
     <div id="page">
 
@@ -187,13 +262,14 @@
           <h1><a href="#home">Jimmy Schementi</a></h1>
           <ul id="main-menu">
             <li class='arrow'>&rsaquo;</li>
-            <li><a href="#code">code</a></li>
-            <li><a href="#writing">write</a></li>
+            <li><a href="#code">projects</a></li>
+            <li><a href="#writing">writing</a></li>
             <li><a href="#music">music</a></li>
-            <li><a href="#photos">photo</a></li>
+            <li><a href="#photos">photos</a></li>
             <li><a href="#art">art</a></li>
           </ul>
-      </div>
+          <div class="clear"></div>
+        </div>
       </div>
 
       <div id="body">
@@ -204,43 +280,68 @@
           <div id="home-writing" class='section half first'>
             <h2>Writing</h2>
             <div class='islands'>
-            <div class='article island'>
-              <h3 class='title'><a href="">MIX10 - IronRuby and IronPython - Part 1 (Intro)</a></h3>
-              <div class="body">
-                This past week I had the pleasure of attending and speaking at MIX10 in Las Vegas
-                about using IronRuby and IronPython on the web. If you're a TV-person instead of
-                a reading-person, here's a video of the talk ...
+              <div class='article island'>
+                <h3 class='title'><a href="1">MIX10 - IronRuby and IronPython - Part 1 (Intro)</a></h3>
+                <div class="body">
+                  This past week I had the pleasure of attending and speaking at MIX10 in Las Vegas
+                  about using IronRuby and IronPython on the web. If you're a TV-person instead of
+                  a reading-person, here's a video of the talk ...
+                </div>
+                <div class='tags'>
+                  <a href=''>Python</a>, <a href=''>Ruby</a>, <a href="">IronRuby</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
+                </div>
               </div>
-              <div class='tags'>
-                <a href=''>Python</a>, <a href=''>Ruby</a>, <a href="">IronRuby</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
+  
+              <div class='article island'>
+                <h3 class='title'><a href="2">PyCon 2010 - Python in the browser</a></h3>
+                <div class='body'>
+                  Last weekend I was very fortunate to speak at PyCon 2010 in Atlanta about writing 
+                  browser-based applications in Python. A majority of the IronPython team was also there;
+                  Dino Viehland spoke about IronPython Tooling  ...
+                </div>
+                <div class="tags">
+                  <a href=''>Python</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
+                </div>
               </div>
+              
+              <div class='article island'>
+                <h3 class="title"><a href='3'>What can you get with 10KB of Ruby or Python code?</a></h3>
+                <div class='body'>
+                  $1000 and a trip to MIX 2010! 9 days left, an counting, to enter your minimalist creation
+                  into the MIX 10K Smart Coding Challenge. Do anything you want, it just has to be less than
+                  10 kilobytes of source code...
+                </div>
+                <div class="tags">
+                  <a href=''>Python</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>, <a href=''>MIX10</a>
+                </div>
+              </div>
+              
+              <div class='article island'>
+                <h3 class="title"><a href='4'>IronRuby @ RubyConf 2009 - Part 4: Project status </a></h3>
+                <div class='body'>
+                  It's been a long ride - starting in 2007 when IronRuby was introduced running in Silverlight. 
+                  Things started out slowly, but for the last year we've moved pretty quick, have gotten great feedback, 
+                  and IronRuby is due for another bump...
+                </div>
+                <div class="tags">
+                  <a href=''>Ruby</a>, <a href=''>IronRuby</a>, <a href=''>RubyConf2010</a>
+                </div>
+              </div>
+              
             </div>
-
-            <div class='article island'>
-              <h3 class='title'><a href="">PyCon 2010 - Python in the browser</a></h3>
-              <div class='body'>
-                Last weekend I was very fortunate to speak at PyCon 2010 in Atlanta about writing 
-                browser-based applications in Python. A majority of the IronPython team was also there;
-                Dino Viehland spoke about IronPython Tooling  ...
-              </div>
-              <div class="tags">
-                <a href=''>Python</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
-              </div>
-            </div>
-          </div>
           </div>
 
           <div id="home-projects" class='section quarter'>
-            <h2>Software projects</h2>
+            <h2>Projects</h2>
             <div class='islands'>  
             <div class='project island'>
               <h3><a id='ironruby' href="ironruby"><img src='images/projects/ir-logo.png' width='150' height='42' alt='IronRuby' /></a></h3>
               <p>
                 IronRuby is a implementation of the Ruby programming language for the
-                Microsoft.NET and Mono frameworks. Ruby developers can run
+                Microsoft.NET and Mono frameworks. <!-- Ruby developers can run
                 their applications on .NET, existing .NET developers can use Ruby as
                 a scripting and embedding language, and client web-developers can use
-                Ruby as a programming language in the browser.
+                Ruby as a programming language in the browser. -->
               </p>
             </div>
             <div class='project island'>
@@ -261,7 +362,7 @@
             </div>
           </div>
 
-          <div id="home-connections" class='section quarter'>
+          <div id="home-connections" class='section quarter last'>
             <h2>About me</h2>
             <div class='islands'>
               <div class='area'>
@@ -286,11 +387,12 @@
             TODO music
           </div>
 
-          <div id='home-art' class='section third'>
+          <div id='home-art' class='section third last'>
             <h2>Artwork</h2>
             TODO paintings sketches
           </div>
 
+          <div class="clear"></div>
         </div>
 
         <div id="code" class='topic'>  
