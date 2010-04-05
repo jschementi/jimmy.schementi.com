@@ -368,6 +368,7 @@
                 <script type="text/javascript">
                   $(document).ready(function() {
                     $('.rss_box li').removeAttr('style');
+                    $('a.rss_item').removeAttr('target');
                   });
                 </script>
                 <!--
@@ -473,7 +474,20 @@
           <div class='container'>
             <div id="home-photos" class='section'>
               <h2><a href=''>Photography</a></h2>
-              TODO flickr photos
+              
+              <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=12&amp;html=a"  type="text/javascript"></script>
+              <noscript>
+              <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=12&amp;html=y">View RSS feed</a>
+              </noscript>
+
+              <script type='text/javascript'>
+                $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent());
+                $('#home-photos img').removeAttr('width').removeAttr('height');
+                $('#home-photos img').each(function() {
+                  $(this).attr('src',
+                    $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
+                });
+              </script>
             </div>
   
             <div id='home-music' class='section'>
