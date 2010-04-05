@@ -142,18 +142,18 @@
           height: 0;
         }
 
-        .area:first-child, .island:first-child {
+        .area:first-child, .island:first-child .rss_item:first-child {
           padding-top: 1em;
         }
         
-        .area:last-child, .island:last-child {
+        .area:last-child, .island:last-child, .rss_item:last-child {
           padding-bottom: 1em;
         }
         
-        .area, .island {
+        .area, .island, .rss_item {
           padding: 0 1em 2em 0;
         }
-        .island:hover {
+        .island:hover, .rss_item:hover {
           cursor: pointer;
         }
 
@@ -177,6 +177,7 @@
           left: -4.2em;
           top: 3em;
           background-color: #0077CC;
+          
           /* http://snook.ca/archives/html_and_css/css-text-rotation */
           -webkit-transform: rotate(-90deg);
           -moz-transform: rotate(-90deg);
@@ -186,29 +187,44 @@
 
       /* writing section */
 
-        #home-writing {
+        #home-writing, .rss_items {
           margin-right: 46em;
+        }
+        ul.rss_items {
+          margin: 0; padding: 0;
         }
 
         #home-writing .article p {
+          margin: 0; padding: 0;
+        }
+        #home-writing .article p,
+        #home-writing .rss_item {
           color: gray;
           font-size: 1.5em;
           letter-spacing: -0.03em;
-          margin: 0;
-          padding: 0;
+          
+          list-style: none;
+        }
+        #home-writing .article p {
+          font-size: 1.5em;
         }
         #home-writing .article h3 {
           margin: 0;
           font-size: 2em;
           letter-spacing: -0.05em;
-        }
-        #home-writing .article h3 a {
           padding: 0.2em 0.1em 0.1em 0;
           color: #ff6600;
         }
-        #home-writing .article h3 a:hover {
+        #home-writing .rss_item a {
+          margin: 0;
+          font-size: 1.25em;
+          letter-spacing: -0.05em;
+          padding: 0.2em 0.1em 0.1em 0;
+          color: #ff6600;
+        }
+        #home-writing .article h3 a:hover,
+        #home-writing .rss_item a:hover {
           color: white;
-          /* background-color: #0077CC; */
           background-color: #ff6600;
           text-decoration: none;
         }
@@ -292,17 +308,23 @@
           navigateTo($(this).attr('href'));
           return false;
         });
-        $('.island').hover(
-          function() {
-            $('p', this).css('color', 'black');
-          }, function() {
-            $('p', this).css('color', 'gray');
-          }
-        );
-        
-        $('.island').click(function() {
-          window.location.href = $('h3 a', $(this)).attr('href')
-        });
+        var islandMouseIn = function() {
+          $(this).css('color', 'black');
+          $('p', this).css('color', 'black');
+        }
+        var islandMouseOut = function() {
+          $(this).css('color', 'gray');
+          $('p', this).css('color', 'gray');
+        }
+        var islandClick = function() {
+          link = $('h3 a', $(this))
+          if (link.length == 0) link = $('a.rss_item', $(this))
+          window.location.href = link.attr('href');
+        };
+        $('.island').hover(islandMouseIn, islandMouseOut);
+        $('li.rss_item').hover(islandMouseIn, islandMouseOut);
+        $('.island').click(islandClick);
+        $('li.rss_item').click(islandClick);
       })
 
     </script>
@@ -335,7 +357,20 @@
           <div class='container'>
             <div id="home-writing" class='section'>
               <h2><a href=''>Writing</a></h2>
+              
               <div class='islands'>
+              
+                <script language="JavaScript" src="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y" type="text/javascript"></script>
+                <noscript>
+                <a href="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y&html=y">View RSS feed</a>
+                </noscript>
+
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('.rss_box li').removeAttr('style');
+                  });
+                </script>
+                <!--
                 <div class='article island'>
                   <h3 class='title'><a href="1">MIX10 - IronRuby and IronPython - Part 1 (Intro)</a></h3>
                   <p class="body">
@@ -383,6 +418,7 @@
                     <a href=''>Ruby</a>, <a href=''>IronRuby</a>, <a href=''>RubyConf2010</a>
                   </div>
                 </div>
+                -->
                 
               </div>
             </div>
