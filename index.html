@@ -33,6 +33,7 @@
       #page {
         margin: 0 auto;
         text-align: left;
+        width: 92.7em;
       }
 
       /* header styles */
@@ -123,6 +124,7 @@
 
       .container {
         position: relative;
+        clear: both;
       }
 
       /* section */
@@ -187,8 +189,9 @@
 
       /* writing section */
 
-        #home-writing, .rss_items {
-          margin-right: 46em;
+        #home-writing {
+          float: left;
+          width: 36.7em;
         }
         ul.rss_items {
           margin: 0; padding: 0;
@@ -237,10 +240,8 @@
       /* projects section */
   
         #home-projects {
-          position: absolute;
-          right: 19em;
+          float: left;
           width: 23em;
-          top: 0;
         }
   
         #home-projects h3 {
@@ -257,36 +258,56 @@
         }
         
         #home-connections {
-          position: absolute;
-          right: 0;
+          float: left;
           width: 15em;
-          top: 0;
         }
         
         #home-photos {
-          position: absolute;
-          left: 0;
-          width: 35em;
-          top: 0;
-          background-color: #ff9900;
+          float: left;
+          width: 36.7em;
         }
-        
+
+        #home-photos a.flickr {
+          margin: 0.2em;
+          padding: 0.2em;
+          display: block;
+          float: left;
+          border: 1px solid #ccc;
+        }
+        #home-photos a.flickr:hover {
+          background-color: #ff6600;
+        }
+
+        #home-photos a.flickr img {
+          display: block;
+          border: 0;
+        }
+
         #home-music {
-          margin-left: 35em;
-          margin-right: 20em;
-          top: 0;
-          background-color: #ffff99;
+          float: left;
+          width: 23em;
+        }
+        #home-music p, #home-art p {
+          font-size: 3em;
+          margin: 0;
         }
         
         #home-art {
-          position: absolute;
-          width: 20em;
-          right: 0;
-          top: 0;
-          background-color: #ee4400;
+          float: left;
+          width: 15em;
         }
 
     </style>
+    
+    <!--[if gt IE 7]>
+      <style type="text/css">
+        .section h2 a {
+          top: 0;
+          left: -1.2em;
+        }
+      </style>
+    <![endif]-->
+    
     <script type="text/javascript">
       var navigateTo = function(topic) {
         $('.topic').hide();
@@ -423,22 +444,7 @@
                 
               </div>
             </div>
-  
-            <div id="home-connections" class='section'>
-              <h2><a href=''>About me</a></h2>
-              <div class='islands'>
-                <div class='area'>
-                  <a href="http://www.linkedin.com/in/jschementi" target='_blank'>
-                    <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Jimmy Schementi's profile on LinkedIn">
-                  </a>
-                </div>
-                <div class='area'>
-                  <a href="http://www.facebook.com/jschementi" title="Jimmy Schementi" target="_blank"><img src="http://badge.facebook.com/badge/29100024.194.1526369336.png" width="120" height="132" style="border: 0px;" /></a>
-                  <br /> 
-                </div>
-              </div>
-            </div>
-  
+
             <div id="home-projects" class='section'>
               <h2><a href=''>Projects</a></h2>
               <div class='islands'>
@@ -469,35 +475,54 @@
               </div>
               </div>
             </div>
+
+            <div id="home-connections" class='section'>
+              <h2><a href=''>About me</a></h2>
+              <div class='islands'>
+                <div class='area'>
+                  <a href="http://www.linkedin.com/in/jschementi" target='_blank'>
+                    <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Jimmy Schementi's profile on LinkedIn">
+                  </a>
+                </div>
+                <div class='area'>
+                  <a href="http://www.facebook.com/jschementi" title="Jimmy Schementi" target="_blank"><img src="http://badge.facebook.com/badge/29100024.194.1526369336.png" width="120" height="132" style="border: 0px;" /></a>
+                  <br /> 
+                </div>
+              </div>
+            </div>
+  
+
           </div>
           
           <div class='container'>
             <div id="home-photos" class='section'>
               <h2><a href=''>Photography</a></h2>
               
-              <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=12&amp;html=a"  type="text/javascript"></script>
+              <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=a"  type="text/javascript"></script>
               <noscript>
-              <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=12&amp;html=y">View RSS feed</a>
+              <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=y">View RSS feed</a>
               </noscript>
 
               <script type='text/javascript'>
-                $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent());
-                $('#home-photos img').removeAttr('width').removeAttr('height');
-                $('#home-photos img').each(function() {
-                  $(this).attr('src',
-                    $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
+                $(document).ready(function() {
+                  $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent().addClass('flickr'));
+                  $('#home-photos img').removeAttr('width').removeAttr('height');
+                  $('#home-photos img').each(function() {
+                    $(this).attr('src',
+                      $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
+                    });
                 });
               </script>
             </div>
   
             <div id='home-music' class='section'>
               <h2><a href=''>Music</a></h2>
-              TODO music
+              <p>todo</p>
             </div>
   
             <div id='home-art' class='section'>
               <h2><a href=''>Artwork</a></h2>
-              TODO paintings sketches
+              <p>todo</p>
             </div>
           </div>
           <div class="clear"></div>
