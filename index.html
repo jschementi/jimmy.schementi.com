@@ -36,12 +36,111 @@
         width: 92.7em;
       }
 
+      /* background image */
+      
+      #background {
+        width: 92.7em;
+        margin: 0 auto;
+        text-align: center;
+        z-index: -1;
+        position: relative;
+      }
+      .hide-background #background {
+        display: none;
+      }
+
+      .image {
+        z-index: -1;
+        width: 1280px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      
+      /* sanfran theme */
+        
+        body#sanfran {
+          background: black;
+          color: white;
+        }
+        #sanfran #background .image {
+          left:-15em;
+          top:-2em;
+        }
+        #sanfran #home-about .area,
+        #sanfran .project,
+        #sanfran li.rss_item {
+          background-color: black;
+          padding: 0.5em;
+          margin-bottom: 0.5em;
+        }
+        #sanfran #navigation a {
+          background-color: black;
+        }
+        #sanfran ul#main-menu li a:hover {
+          background-color: #ff6600;
+        }
+        #sanfran ul#main-menu a#active {
+          color: white;
+        }
+        #sanfran .island p, 
+        #sanfran .area p {
+          color: white;
+        }
+        
+      /* formal theme */
+        
+        body#formal {
+          background: black;
+          color: white;
+        }
+        #formal #background .image {
+          left:-30em;
+          top:-3em;
+        }
+        #formal #home-about .area,
+        #formal .project,
+        #formal li.rss_item {
+          background-color: black;
+          padding: 0.5em;
+          margin-bottom: 0.5em;
+        }
+        #formal #navigation a {
+          background-color: black;
+        }
+        #formal ul#main-menu li a:hover {
+          background-color: #ff6600;
+        }
+        #formal ul#main-menu a#active {
+          color: white;
+        }
+        #formal .island p, 
+        #formal .area p {
+          color: white;
+        }
+        
+      /* guitar theme */
+        
+        #guitar #background .image {
+          left:-2em;
+          top:10em;
+          width:700px;
+        }
+        #guitar #home-about .area,
+        #guitar .project,
+        #guitar li.rss_item {
+          background-color: white;
+          padding: 0.5em;
+          margin-bottom: 0.5em;
+        }
+
+
       /* header styles */
 
-      #header {
-        padding-top: 2em;
-        padding-left: 2em;
-      }
+        #header {
+          padding-top: 2em;
+          padding-left: 2em;
+        }
   
       /* site title */
   
@@ -126,6 +225,19 @@
         position: relative;
         clear: both;
       }
+      
+      #zero-container {
+        float:right;
+        width:46em;
+      }
+      #first-container {
+        float:right;
+        width:46em;
+      }
+      #second-container {
+        float: right;
+        width: 46em;
+      }
 
       /* section */
   
@@ -158,6 +270,11 @@
         .island:hover, .rss_item:hover {
           cursor: pointer;
         }
+        
+        .island p, .area p {
+          font-size: 1.5em;
+          letter-spacing: -0.02em;
+        }
 
 
       /* section headings */
@@ -176,7 +293,7 @@
           padding-right: 0.5em;
           
           position: absolute;
-          left: -4.2em;
+          left: -4.17em;
           top: 3em;
           background-color: #0077CC;
           
@@ -186,13 +303,20 @@
           filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
         }
 
-
       /* writing section */
 
         #home-writing {
           float: left;
-          width: 36.7em;
+          width: 19em;
+          margin-right: 1em;
         }
+        #most-recent-post.section {
+          min-height: 0;
+        }
+        #most-recent-post.section h2 a {
+          z-index: 10;
+        }
+        
         ul.rss_items {
           margin: 0; padding: 0;
         }
@@ -200,16 +324,19 @@
         #home-writing .article p {
           margin: 0; padding: 0;
         }
+        #most-recent-post .rss_item {
+          font-size: 1.75em;
+        }
+        #most-recent-post .rss_item,
         #home-writing .article p,
         #home-writing .rss_item {
           color: gray;
-          font-size: 1.5em;
           letter-spacing: -0.03em;
-          
           list-style: none;
         }
-        #home-writing .article p {
-          font-size: 1.5em;
+        #home-writing .article p,
+        #home-writing .rss_item {
+          font-size: 1.35em;
         }
         #home-writing .article h3 {
           margin: 0;
@@ -218,6 +345,7 @@
           padding: 0.2em 0.1em 0.1em 0;
           color: #ff6600;
         }
+        #most-recent-post .rss_item a,
         #home-writing .rss_item a {
           margin: 0;
           font-size: 1.25em;
@@ -225,6 +353,7 @@
           padding: 0.2em 0.1em 0.1em 0;
           color: #ff6600;
         }
+        #most-recent-post .rss_item a:hover,
         #home-writing .article h3 a:hover,
         #home-writing .rss_item a:hover {
           color: white;
@@ -241,7 +370,7 @@
   
         #home-projects {
           float: left;
-          width: 23em;
+          width: 18em;
         }
   
         #home-projects h3 {
@@ -257,9 +386,19 @@
           margin: 0.5em 0.25em 0;
         }
         
-        #home-connections {
-          float: left;
-          width: 15em;
+        #home-about {
+        }
+        #home-about p {
+          font-size: 2em;
+          margin: 0;
+        }
+        #home-about.section {
+          min-height: 0;
+        }
+        #home-about h2 a {
+          left:-2.93em;
+          top:1.73em;
+          width:125px;
         }
         
         #home-photos {
@@ -273,6 +412,7 @@
           display: block;
           float: left;
           border: 1px solid #ccc;
+          background-color: white;
         }
         #home-photos a.flickr:hover {
           background-color: #ff6600;
@@ -305,43 +445,87 @@
           top: 0;
           left: -1.2em;
         }
+        #home-about.section h2 a {
+          top: 0;
+          left: -1.2em;
+        }
       </style>
     <![endif]-->
     
     <script type="text/javascript">
-      var navigateTo = function(topic) {
+      var showBackground = function() {
+        $(document.body).removeClass('hide-background');
+        $('#background').show()
+      }
+      
+      var hideBackground = function() {
+        $(document.body).addClass('hide-background');
+        $('#background').hide()
+      }
+    
+      var navigateTo = function(topic) {      
+        if (topic != '#home') {
+          hideBackground();
+        } else {
+          showBackground();
+        }
+
         $('.topic').hide();
         $(topic).show();
+
         $('#navigation a').removeAttr('id');
         $('#navigation a[href=' + topic + ']').attr('id', 'active');
+
         window.location.hash = topic;
         document.getElementsByName('very-top')[0].scrollIntoView(true);
       }
     
       $(document).ready(function() {
         $('.topic').hide();
+        
         if (location.hash.length == 0) {
           navigateTo('#home');
         } else {
           navigateTo(location.hash)
         }
+        
         $('#navigation a').click(function() {
           navigateTo($(this).attr('href'));
           return false;
         });
+        
+        $('.project.island a').click(function() {
+          navigateTo($(this).attr('href'));
+          return false;
+        });
+        
         var islandMouseIn = function() {
-          $(this).css('color', 'black');
-          $('p', this).css('color', 'black');
+          color = 'black';
+          actual = $(this).css('background-color');
+          if (actual == 'rgb(0, 0, 0)' || actual == 'black') {
+            color = 'white'
+          }
+          $(this).css('color', color);
+          $('p', this).css('color', color);
         }
+        
         var islandMouseOut = function() {
           $(this).css('color', 'gray');
           $('p', this).css('color', 'gray');
         }
+        
         var islandClick = function() {
           link = $('h3 a', $(this))
-          if (link.length == 0) link = $('a.rss_item', $(this))
-          window.location.href = link.attr('href');
+          if (link.length == 0) {
+            link = $('a.rss_item', $(this))
+          }
+          if (link.attr('href')[0] == '#') {
+            navigateTo(link.attr('href'));
+          } else {
+            window.location.href = link.attr('href');
+          }
         };
+        
         $('.island').hover(islandMouseIn, islandMouseOut);
         $('li.rss_item').hover(islandMouseIn, islandMouseOut);
         $('.island').click(islandClick);
@@ -352,6 +536,28 @@
   </head>
   <body>
     <a name="very-top"></a>
+
+    <div id="background">
+      <img class="image" alt="" src='' style='display: none' />
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          if (document.body.id.length > 0) {
+            $('#background .image').attr('src', 'images/home-me/' + document.body.id + '.jpg');
+            $('#background .image').show();
+          } else {
+            $('#background .image').css({
+              'background-image': 'url(images/home-me/sanfran.jpg)',
+              'margin-top': '127px',
+              'margin-left': '36px',
+              'width': '479px',
+              'height': '530px',
+              'background-position': '-210px -100px'
+            });
+            $('#background .image').show();
+          }
+        });
+      </script>
+    </div>
 
     <div id="page">
 
@@ -375,12 +581,45 @@
         <div id='home' class='topic'>
           <a name="home"></a>
           
-          <div class='container'>
+          <div class='container' id='second-container'>
+            <div id="home-about" class='section'>
+              <h2><a href=''>About me</a></h2>
+              <div class='islands'>
+                <div class='area'>
+                  <p>
+                    Jimmy Schementi is a software developer living in Seattle,
+                    working on programming languages at Microsoft.
+                  </p>
+                </div>
+                <div class='area'>
+                  <a href="http://www.linkedin.com/in/jschementi" target='_blank' style="float: left">
+                    <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Jimmy Schementi's profile on LinkedIn">
+                  </a>
+                  <i style='float: left; padding: 0.5em; font-size: 1.3em;'>and</i>
+                  <a href="http://www.facebook.com/jschementi" title="Jimmy Schementi" target="_blank" style="display: block; float: left; background-image: url(http://badge.facebook.com/badge/29100024.194.1526369336.png); border: 0; width: 120px; height: 26px; margin-top: 4px;">&nbsp;</a> 
+                  <div class='clear'></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class='container' id='zero-container'>
+
+            <div id="most-recent-post" class='section'>
+              <h2><a href="">jimmy.thinking</a></h2>
+              <script language="JavaScript" src="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=1&desc=180&targ=y" type="text/javascript"></script>
+              <noscript>
+              <a href="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y&html=y">View RSS feed</a>
+              </noscript>
+            </div>
+
+          </div>
+          
+          <div class='container' id='first-container'>
+
             <div id="home-writing" class='section'>
-              <h2><a href=''>Writing</a></h2>
               
               <div class='islands'>
-              
                 <script language="JavaScript" src="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y" type="text/javascript"></script>
                 <noscript>
                 <a href="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y&html=y">View RSS feed</a>
@@ -390,6 +629,7 @@
                   $(document).ready(function() {
                     $('.rss_box li').removeAttr('style');
                     $('a.rss_item').removeAttr('target');
+                    $('#home-writing .rss_box li:first-child').hide();
                   });
                 </script>
                 <!--
@@ -446,10 +686,10 @@
             </div>
 
             <div id="home-projects" class='section'>
-              <h2><a href=''>Projects</a></h2>
+              <h2><a href=''>Recent projects</a></h2>
               <div class='islands'>
               <div class='project island'>
-                <h3><a id='ironruby' href="ironruby"><img src='images/projects/ir-logo.png' width='150' height='42' alt='IronRuby' /></a></h3>
+                <h3><a href="#ironruby"><img src='images/projects/ir-logo.png' width='150' height='42' alt='IronRuby' /></a></h3>
                 <p>
                   IronRuby is a implementation of the Ruby programming language for the
                   Microsoft.NET and Mono frameworks. <!-- Ruby developers can run
@@ -459,7 +699,7 @@
                 </p>
               </div>
               <div class='project island'>
-                <h3><a id='sourceaid' href="sourceaid"><img src='images/projects/sourceaid_logo.gif' width='150' height='60' alt='SourceAid' /></a></h3>
+                <h3><a href="#sourceaid"><img src='images/projects/sourceaid_logo.gif' width='150' height='60' alt='SourceAid' /></a></h3>
                 <p>
                   SourceAid provides research and citation tools and resources to
                   students, professors, and entire institutions to help stop plagiarism
@@ -467,7 +707,7 @@
                 </p>
               </div>
               <div class='project island'>
-                <h3><a id='assistment' href="assistment"><img src='images/projects/assistment-logo.png' width='150' height='32' alt='Assistment' /></a></h3>
+                <h3><a href="#assistment"><img src='images/projects/assistment-logo.png' width='150' height='32' alt='Assistment' /></a></h3>
                 <p>
                   The Assistment system assists students in learning mathematics and gives
                   teachers assessment of their students' progress.
@@ -475,28 +715,12 @@
               </div>
               </div>
             </div>
-
-            <div id="home-connections" class='section'>
-              <h2><a href=''>About me</a></h2>
-              <div class='islands'>
-                <div class='area'>
-                  <a href="http://www.linkedin.com/in/jschementi" target='_blank'>
-                    <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Jimmy Schementi's profile on LinkedIn">
-                  </a>
-                </div>
-                <div class='area'>
-                  <a href="http://www.facebook.com/jschementi" title="Jimmy Schementi" target="_blank"><img src="http://badge.facebook.com/badge/29100024.194.1526369336.png" width="120" height="132" style="border: 0px;" /></a>
-                  <br /> 
-                </div>
-              </div>
-            </div>
-  
-
           </div>
           
-          <div class='container'>
+
+          <div class='container' style='clear: none; margin-top:45em;'>
             <div id="home-photos" class='section'>
-              <h2><a href=''>Photography</a></h2>
+              <h2><a href=''>Photos</a></h2>
               
               <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=a"  type="text/javascript"></script>
               <noscript>
@@ -514,7 +738,8 @@
                 });
               </script>
             </div>
-  
+            
+            <!--
             <div id='home-music' class='section'>
               <h2><a href=''>Music</a></h2>
               <p>todo</p>
@@ -524,8 +749,9 @@
               <h2><a href=''>Artwork</a></h2>
               <p>todo</p>
             </div>
+            -->
           </div>
-          <div class="clear"></div>
+
         </div>
 
         <div id="code" class='topic'>  
@@ -586,6 +812,24 @@
           <a name="art"></a>
           <h2>Art</h2>
           <p>I used to paint and draw a lot</p>
+        </div>
+
+        <div id="ironruby" class="topic">
+          <a name="ironruby"></a>
+          <h2>IronRuby</h2>
+          <p>what I work on currently</p>
+        </div>
+
+        <div id="sourceaid" class="topic">
+          <a name="sourceaid"></a>
+          <h2>SourceAid</h2>
+          <p>TODO</p>
+        </div>
+
+        <div id="assistment" class="topic">
+          <a name="assistment"></a>
+          <h2>Assistment</h2>
+          <p>what I used to work on</p>
         </div>
 
       </div>
