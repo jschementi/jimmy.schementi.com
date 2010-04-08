@@ -7,8 +7,9 @@
     <script src="jquery-1.4.1.min.js" type="text/javascript"></script>
     
     <script src="colorbox/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+    <script src="jquery.corner.js" type="text/javascript"></script>
     
-    <link type="text/css" media="screen" rel="stylesheet" href="colorbox/example3/colorbox.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="colorbox/example5/colorbox.css" />
     
     <script type="text/javascript">
 			$(document).ready(function(){
@@ -83,8 +84,6 @@
         #sanfran .project,
         #sanfran li.rss_item {
           background-color: black;
-          padding: 0.5em;
-          margin-bottom: 0.5em;
         }
         #sanfran #navigation a {
           background-color: black;
@@ -98,6 +97,14 @@
         #sanfran .island p, 
         #sanfran .area p {
           color: white;
+        }
+        
+        #sanfran #home-photos a.flickr {
+          background-color: white;
+          border: 0;
+        }
+        #sanfran #home-photos a.flickr:hover {
+          background-color: #ff6600;
         }
         
       /* formal theme */
@@ -114,8 +121,6 @@
         #formal .project,
         #formal li.rss_item {
           background-color: black;
-          padding: 0.5em;
-          margin-bottom: 0.5em;
         }
         #formal #navigation a {
           background-color: black;
@@ -129,6 +134,15 @@
         #formal .island p, 
         #formal .area p {
           color: white;
+        }
+        
+        #formal #home-photos a.flickr {
+          background-color: white;
+          border: 0;
+        }
+        
+        #formal #home-photos a.flickr:hover {
+          background-color: #ff6600;
         }
         
       /* guitar theme */
@@ -256,7 +270,7 @@
         .section {
           position: relative;
           border-left: 3em solid #0077CC;
-          padding-left: 1em;
+          /* padding-left: 1em; */
           margin-bottom: 1em;
           min-height: 20em;
         }
@@ -267,17 +281,18 @@
           position: relative;
           height: 0;
         }
-
-        .area:first-child, .island:first-child .rss_item:first-child {
-          padding-top: 1em;
+/*
+        .area:first-child, .island:first-child li.rss_item:first-child {
+          margin-top: 1em;
         }
         
-        .area:last-child, .island:last-child, .rss_item:last-child {
-          padding-bottom: 1em;
-        }
+        .area:last-child, .island:last-child, li.rss_item:last-child {
+          margin-bottom: 0.5em;
+        }*/
         
-        .area, .island, .rss_item {
-          padding: 0 1em 2em 0;
+        .area, .island, .rss_item {          
+          padding: 0.5em;
+          margin-bottom: 0.5em;
         }
         .island:hover, .rss_item:hover {
           cursor: pointer;
@@ -303,11 +318,13 @@
           width: 200px;
           display: block;
           padding-right: 0.5em;
+          white-space: nowrap;
           
           position: absolute;
           left: -4.17em;
           top: 3em;
-          background-color: #0077CC;
+          /* background-color: #0077CC; */
+          
           
           /* http://snook.ca/archives/html_and_css/css-text-rotation */
           -webkit-transform: rotate(-90deg);
@@ -319,11 +336,15 @@
 
         #home-writing {
           float: left;
-          width: 19em;
+          width: 21em;
           margin-right: 1em;
         }
         #most-recent-post.section {
           min-height: 0;
+          margin-bottom: 0;
+        }
+        #most-recent-post .rss_box {
+          padding-bottom:1em;
         }
         #most-recent-post.section h2 a {
           z-index: 10;
@@ -336,10 +357,11 @@
         #home-writing .article p {
           margin: 0; padding: 0;
         }
-        #most-recent-post .rss_item {
+        #most-recent-post li.rss_item {
           font-size: 1.75em;
+          margin-bottom:0;
         }
-        #most-recent-post .rss_item,
+        #most-recent-post li.rss_item,
         #home-writing .article p,
         #home-writing .rss_item {
           color: gray;
@@ -395,7 +417,7 @@
           color: gray;
           font-size: 1.4em;
           letter-spacing: -0.02em;
-          margin: 0.5em 0.25em 0;
+          margin: 0.5em 0 0;
         }
         
         #home-about {
@@ -420,14 +442,15 @@
 
         #home-photos a.flickr {
           margin: 0.2em;
-          padding: 0.2em;
+          padding: 1px;
+          border: 1px solid #aaa;
           display: block;
           float: left;
-          border: 1px solid #ccc;
-          background-color: white;
+          background-color: none;
         }
         #home-photos a.flickr:hover {
           background-color: #ff6600;
+          border: 1px solid #ff6600;
         }
 
         #home-photos a.flickr img {
@@ -538,10 +561,7 @@
           }
         };
         
-        $('.island').hover(islandMouseIn, islandMouseOut);
-        $('li.rss_item').hover(islandMouseIn, islandMouseOut);
-        $('.island').click(islandClick);
-        $('li.rss_item').click(islandClick);
+        $('.island, li.rss_item').hover(islandMouseIn, islandMouseOut).click(islandClick);
       })
 
     </script>
@@ -564,7 +584,7 @@
               'margin-left': '36px',
               'width': '479px',
               'height': '530px',
-              'background-position': '-210px -100px'
+              'background-position': '-210px -135px'
             });
             $('#background .image').show();
           }
@@ -646,58 +666,9 @@
                     $('.rss_box li').removeAttr('style');
                     $('a.rss_item').removeAttr('target');
                     $('#home-writing .rss_box li:first-child').hide();
+                    $('.rss_item p').hide();
                   });
                 </script>
-                <!--
-                <div class='article island'>
-                  <h3 class='title'><a href="1">MIX10 - IronRuby and IronPython - Part 1 (Intro)</a></h3>
-                  <p class="body">
-                    This past week I had the pleasure of attending and speaking at MIX10 in Las Vegas
-                    about using IronRuby and IronPython on the web. If you're a TV-person instead of
-                    a reading-person, here's a video of the talk ...
-                  </p>
-                  <div class='tags'>
-                    <a href=''>Python</a>, <a href=''>Ruby</a>, <a href="">IronRuby</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
-                  </div>
-                </div>
-    
-                <div class='article island'>
-                  <h3 class='title'><a href="2">PyCon 2010 - Python in the browser</a></h3>
-                  <p class='body'>
-                    Last weekend I was very fortunate to speak at PyCon 2010 in Atlanta about writing 
-                    browser-based applications in Python. A majority of the IronPython team was also there;
-                    Dino Viehland spoke about IronPython Tooling  ...
-                  </p>
-                  <div class="tags">
-                    <a href=''>Python</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>
-                  </div>
-                </div>
-                
-                <div class='article island'>
-                  <h3 class="title"><a href='3'>What can you get with 10KB of Ruby or Python code?</a></h3>
-                  <p class='body'>
-                    $1000 and a trip to MIX 2010! 9 days left, an counting, to enter your minimalist creation
-                    into the MIX 10K Smart Coding Challenge. Do anything you want, it just has to be less than
-                    10 kilobytes of source code...
-                  </p>
-                  <div class="tags">
-                    <a href=''>Python</a>, <a href=''>IronPython</a>, <a href=''>Silverlight</a>, <a href=''>MIX10</a>
-                  </div>
-                </div>
-                
-                <div class='article island'>
-                  <h3 class="title"><a href='4'>IronRuby @ RubyConf 2009 - Part 4: Project status </a></h3>
-                  <p class='body'>
-                    It's been a long ride - starting in 2007 when IronRuby was introduced running in Silverlight. 
-                    Things started out slowly, but for the last year we've moved pretty quick, have gotten great feedback, 
-                    and IronRuby is due for another bump...
-                  </p>
-                  <div class="tags">
-                    <a href=''>Ruby</a>, <a href=''>IronRuby</a>, <a href=''>RubyConf2010</a>
-                  </div>
-                </div>
-                -->
-                
               </div>
             </div>
 
@@ -854,5 +825,11 @@
 
     </div>
 
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.area, .island, li.rss_item').corner('round tr br 10px');
+      });
+    </script>
   </body>
 </html>
