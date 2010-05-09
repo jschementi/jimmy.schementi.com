@@ -147,7 +147,7 @@
 
           <div class='container' style='clear: none; margin-top:45em;'>
             <div id="home-photos" class='section'>
-              <h2><a href=''>Photos</a></h2>
+              <h2><a href=''>Flickr</a></h2>
               
               <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=a"  type="text/javascript"></script>
               <noscript>
@@ -259,6 +259,25 @@
           <a name="/code/assistment"></a>
           <h2>Assistment</h2>
           <p>what I used to work on</p>
+        </div>
+
+        <div id="resume" class="topic" style="display: none">
+          <a name="/resume"></a>
+          <p>
+            Download: <a href="jimmy_schementi.pdf">PDF</a> | <a href="jimmy_schementi.html">HTML</a> | <a href="jimmy_schementi.txt">Plain text</a>
+          </p>
+          <div id="resume_contents" style="">
+            Loading ...
+          </div>
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $.get('jimmy_schementi.html', function(data, status) {
+                var jData = $($(data)[9])
+                $('.section', jData).attr('class', 'resume_section')
+                $('#resume_contents').html(jData)
+              });
+            });
+          </script>
         </div>
 
       </div>

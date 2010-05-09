@@ -1,0 +1,161 @@
+====================================
+Jimmy Schementi - Software Developer
+====================================
+:Email: jimmy@schementi.com
+:Phone: 516.382.2557
+:Web: http://jimmy.schementi.com
+
+
+Professional software developer and program manager experienced in building 
+programming languages and developer tools. Interested in continuing to make
+software that makes people's lives easier, including my own.
+
+Skills
+------
+Ruby, Python, JavaScript, C#, C++, compilers, web development, and
+user-interface design.
+*See each position for more specific skills/experiences.*
+
+
+Experience
+----------
+
+Microsoft
++++++++++
+Program Manager (7/2007 - Present)
+
+  Project manager and software developer for open-source programming languages
+  and tools, specifically IronRuby, IronPython, and the Dynamic Language 
+  Runtime (DLR). Oversee the following areas:
+  
+  - `IronRuby <http://ironruby.net>`_, which involves release management, 
+    specification and documentation writing, evangelism through blogs, public 
+    appearances, and various social media, and development/compiler work where
+    needed. `IronRuby 1.0 <http://ironruby.codeplex.com/releases/view/25901>`_
+    shipped in April 2010.
+  
+  - `DLR Hosts <http://github.com/jschementi/ironruby/tree/master/Hosts>`_,
+    which integrate DLR-languages with special application-models. I owned
+    the spec-writing, coding, and testing of each project. See "Open Source
+    Projects" section for more info.
+  
+  - Process streamlining - make sure this small team in a huge company has the
+    tinyiest process overhead as possible. Communicated with lawyers and
+    management about what could be streamlined, and implemented the changes --
+    instead of weeks of reviews it's boiled down to 1 meeting and a couple emails.
+  
+  - `Lang.NET <http://langnetsymposium.com>`_, a 3-day conference of
+    programming language and developer tool developers.
+    
+  - Websites - designed and built the main websites
+    for both `IronRuby <http://ironruby.net>`_ and `IronPython <http://ironpython.net>`_.
+  
+  *ruby, python, C#, .NET, compilers, Silverlight, Rails, ASP.NET, project management, GIT, TFS, working at a huge company*
+
+Program Manager Intern (Summer 2006)
+
+  Worked on the IronPython team, specifically working on Windows Presentation
+  Foundation and ASP.NET integration.
+
+  *python, C#, WPF, ASP.NET*
+
+Worcester Polytechnic Institute AI Lab
+++++++++++++++++++++++++++++++++++++++
+Assistment.org Lead Developer (1-6/2007)
+
+  Lead WPI's Artifical Intelligence lab in a redesign/rebuild of
+  `Assistment <http://assistment.org>`_, an intelligent tutoring system.
+  Everything was re-thought, from the user-interface designed to the
+  software that ran the system; originally written in Java it was
+  rewritten using `Ruby on Rails <http://rubyonrails.org>`_. Not only was the
+  system easier to manage and maintain, it also had more-complete features
+  than the original. The system was gradually rolled out to schools, and it is
+  still in use today.
+  
+  *ruby, Rails, ITS, user-interface design, Java, HTML/CSS, JavaScript*
+
+General Electric
+++++++++++++++++
+Information Management Leadership Program Intern (Summer 2005)
+
+  Lead a user-acceptance testing effort between teams in US and India.
+  
+  *project management, user-acceptance testing*
+
+
+See my `LinkedIn profile <http://www.linkedin.com/in/jschementi>`_ for a
+more-complete job history.
+
+..
+  Entreprenurial experience: "Schementec"
+  +++++++++++++++++++++++++++++++++++++++++
+  Computer repair and web development, Summer 2004
+
+    Made house calls for computer repairs.
+
+    *marketing, advertising, computer hardware*
+
+  SMPL Technologies
+  +++++++++++++++++
+  Programmer, Summer/Winter 2004
+
+    Wrote a router statistics management portal. Physically helped build a
+    network room and wire offices for ethernet.
+
+    *perl, HTML, Cisco routers, ethernet cable crimping*
+
+  French Woods Festival of the Performing Arts
+  ++++++++++++++++++++++++++++++++++++++++++++
+  Network Administrator/Computer Technician/Bunk Counselor, Summer 2003
+
+    Supervised a 100-computer lab, 20 computer office Apple Mac OS X computers,
+    and 4 employees. Repaired new and old Apple Hardware. Bunk counselor for 50
+    10-year-olds.
+
+    *Mac OSX, management, herding children*
+
+  American Technion Society
+  +++++++++++++++++++++++++
+
+  Jr. Network Administrator, Summer 2002
+
+  Help Desk and Support, Summer 2001
+
+
+Education
+---------
+**Masters, Computer Science**, Worcester Polytechnic Institute, 2005-2007
+
+**Bachelors, Computer Science**, Worcester Polytechnic Institute, 2002 - 2006
+
+
+Open-source projects
+--------------------
+
+`IronRuby <http://ironruby.net>`_
+  Implementation of the Ruby programming language for .NET-based runtimes.
+
+`IronPython <http://ironpython.net>`_
+  Implementation of the Python programming language for .NET-based runtimes.
+
+`Gestalt <http://ironpython.net/browser/>`_
+  Enables Python and Ruby developers to run their language in the browser though
+  Silverlight. This is a crutial feature when it comes to differentating the Iron*
+  implementations from others.
+
+`ironruby-rack <http://github.com/jschementi/ironruby/tree/master/Hosts/IronRuby.Rack/>`_
+  Enables IIS and other ASP.NET-based web-servers to run web applications written
+  in Ruby-based web-frameworks, like `Ruby on Rails <http://rubyonrails.org>`_,
+  `Sinatra <http://sinatrarb.org>`_, etc. This significantly lowers the barrier
+  of entry for both Windows shops looking at Ruby, and Ruby developers who need
+  to deploy on Windows.
+  
+`MerlinWeb <http://aspnet.codeplex.com/wikipage?title=Dynamic%20Language%20Support&referringTitle=Home&ProjectName=aspnet>`_
+  Enabled Python developers to write websites using the ASP.NET Framework.
+
+`IronMVC <http://github.com/jschementi/ironrubymvc>`_:
+  Enables Ruby developers to write websites using the ASP.NET MVC framework.
+
+
+Additional information available upon request
+---------------------------------------------
