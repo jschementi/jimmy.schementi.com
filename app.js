@@ -85,6 +85,55 @@ var setBackground = function (type) {
   }
 }
 
+var enableColorbox = function(obj) {
+  $(document).ready(function() {
+    obj.colorbox({width:"80%", height:"80%", iframe:true});
+  });
+}
+
+var generateBlogFeed = function() {
+  $(document).ready(function() {
+    $('.rss_box li').removeAttr('style');
+    $('a.rss_item').removeAttr('target');
+    $('#home-writing .rss_box li:first-child').hide();
+    $('.rss_item p').hide();
+  });
+}
+
+var generatePhotoFeed = function() {
+  $(document).ready(function() {
+    $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent().addClass('flickr'));
+    $('#home-photos img').removeAttr('width').removeAttr('height');
+    $('#home-photos img').each(function() {
+      $(this).attr('src',
+        $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
+      $(this).parent().attr('rel', 'flickr-latest');
+    });
+    $("a[rel='flickr-latest']").colorbox({width:"80%", height:"80%", iframe:true});
+  });
+}
+
+var renderResume = function() {
+  $(document).ready(function() {
+    $.get('jimmy_schementi.html', function(data, status) {
+      var jData = $($(data)[9])
+      $('.section', jData).attr('class', 'resume_section')
+      $('#resume_contents').html(jData)
+    });
+  });
+}
+
+var roundTheWorld = function() {
+  $(document).ready(function() {
+    $('.area, .island, li.rss_item').corner('round tr br 10px');
+    //$('#navigation a').corner('round 5px');
+    //$('.section').not('#most-recent-post, #home-writing').corner('round tl bl 10px');
+    //$('#most-recent-post').corner('round tl 10px')
+    //$('#home-writing').corner('round bl 10px')
+    //$('#most-recent-post .rss_item a, #home-writing .rss_item a').corner('round 5px');
+  });
+}
+
 $(document).ready(function() {
   $('.topic').hide();
   

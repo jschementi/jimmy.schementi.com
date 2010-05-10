@@ -39,11 +39,11 @@
           <h1><a href="/" rel="address:/">Jimmy Schementi</a></h1>
           <ul id="main-menu">
             <li class='arrow'>&rsaquo;</li>
-            <li><a href="/code" rel="address:/code">projects</a></li>
+            <li><a href="/projects" rel="address:/projects">projects</a></li>
             <li><a href="/writing" rel="address:/writing">writing</a></li>
-            <li><a href="/music" rel="address:/music">music</a></li>
-            <li><a href="/photos" rel="address:/photos">photos</a></li>
-            <li><a href="/art" rel="address:/art">art</a></li>
+            <li><a href="http://flickr.com/photos/jschementi" target="_blank">photos</a></li>
+            <!--<li><a href="/photos" rel="address:/photos">photos</a></li>-->
+            <li><a href="/about" rel="address:/about">about</a></li>
           </ul>
           <div class="clear"></div>
         </div>
@@ -56,7 +56,7 @@
           
           <div class='container' id='second-container'>
             <div id="home-about" class='section'>
-              <h2><a href=''>About me</a></h2>
+              <h2><a href='/about' rel="address:/about">About me</a></h2>
               <div class='islands'>
                 <div class='area'>
                   <p>
@@ -70,9 +70,15 @@
                   </a>
                   <i style='float: left; padding: 0.5em; font-size: 1.3em;'>and</i>
                   <a rel='external-about' href="http://www.facebook.com/profile.php?id=29100024" title="Jimmy Schementi" target="_blank" style="display: block; float: left; background-image: url(http://badge.facebook.com/badge/29100024.194.1526369336.png); border: 0; width: 120px; height: 26px; margin-top: 4px;">&nbsp;</a> 
+
+
+                  <div style="clear: left; padding-top: 0.3em; font-size: 18px;">
+                    <a href="/resume" rel="address:/resume">Resume</a> (<a href="jimmy_schementi.pdf">pdf</a>) (<a href="jimmy_schementi.txt">txt</a>)
+                  </div>
+
                   <div class='clear'></div>
                   <script type="text/javascript">
-                    $("a[rel='external-about']").colorbox({width:"80%", height:"80%", iframe:true});
+                    enableColorbox($("a[rel='external-about']"));
                   </script>
                 </div>
               </div>
@@ -82,7 +88,7 @@
           <div class='container' id='zero-container'>
 
             <div id="most-recent-post" class='section'>
-              <h2><a href="">jimmy.thinking</a></h2>
+              <h2><a href="http://blog.jimmy.schementi.com">jimmy.thinking</a></h2>
               <script language="JavaScript" src="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=1&desc=180&targ=y" type="text/javascript"></script>
               <noscript>
               <a href="http://landmark-project.com/feed2js/feed2js.php?src=http%3A%2F%2Ffeeds.feedburner.com%2Fjimmy-thinking&num=4&desc=140&targ=y&html=y">View RSS feed</a>
@@ -102,21 +108,16 @@
                 </noscript>
 
                 <script type="text/javascript">
-                  $(document).ready(function() {
-                    $('.rss_box li').removeAttr('style');
-                    $('a.rss_item').removeAttr('target');
-                    $('#home-writing .rss_box li:first-child').hide();
-                    $('.rss_item p').hide();
-                  });
+                  generateBlogFeed();
                 </script>
               </div>
             </div>
 
             <div id="home-projects" class='section'>
-              <h2><a href=''>Recent projects</a></h2>
+              <h2><a href='/projects' rel="address:/projects">Recent projects</a></h2>
               <div class='islands'>
               <div class='project island'>
-                <h3><a href="/code/ironruby" rel="address:/code/ironruby"><img src='images/projects/ir-logo.png' width='150' height='42' alt='IronRuby' /></a></h3>
+                <h3><a href="/projects/ironruby" rel="address:/projects/ironruby"><img src='images/projects/ir-logo.png' width='150' height='42' alt='IronRuby' /></a></h3>
                 <p>
                   IronRuby is a implementation of the Ruby programming language for the
                   Microsoft.NET and Mono frameworks. <!-- Ruby developers can run
@@ -126,7 +127,7 @@
                 </p>
               </div>
               <div class='project island'>
-                <h3><a href="/code/sourceaid" rel="address:/code/sourceaid"><img src='images/projects/sourceaid_logo.gif' width='150' height='60' alt='SourceAid' /></a></h3>
+                <h3><a href="/projects/sourceaid" rel="address:/projects/sourceaid"><img src='images/projects/sourceaid_logo.gif' width='150' height='60' alt='SourceAid' /></a></h3>
                 <p>
                   SourceAid provides research and citation tools and resources to
                   students, professors, and entire institutions to help stop plagiarism
@@ -134,7 +135,7 @@
                 </p>
               </div>
               <div class='project island'>
-                <h3><a href="/code/assistment" rel="address:/code/assistment"><img src='images/projects/assistment-logo.png' width='150' height='32' alt='Assistment' /></a></h3>
+                <h3><a href="/projects/assistment" rel="address:/projects/assistment"><img src='images/projects/assistment-logo.png' width='150' height='32' alt='Assistment' /></a></h3>
                 <p>
                   The Assistment system assists students in learning mathematics and gives
                   teachers assessment of their students' progress.
@@ -144,10 +145,9 @@
             </div>
           </div>
           
-
           <div class='container' style='clear: none; margin-top:45em;'>
             <div id="home-photos" class='section'>
-              <h2><a href=''>Flickr</a></h2>
+              <h2><a href='http://flickr.com/photos/jschementi' target='_blank'>Flickr</a></h2>
               
               <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=a"  type="text/javascript"></script>
               <noscript>
@@ -155,16 +155,7 @@
               </noscript>
 
               <script type='text/javascript'>
-                $(document).ready(function() {
-                  $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent().addClass('flickr'));
-                  $('#home-photos img').removeAttr('width').removeAttr('height');
-                  $('#home-photos img').each(function() {
-                    $(this).attr('src',
-                      $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
-                    $(this).parent().attr('rel', 'flickr-latest');
-                  });
-                  $("a[rel='flickr-latest']").colorbox({width:"80%", height:"80%", iframe:true});
-                });
+                generatePhotoFeed();
               </script>
             </div>
             
@@ -184,7 +175,7 @@
         </div>
 
         <div id="code" class='topic' style="display: none">  
-          <a name="/code"></a>
+          <a name="/projects"></a>
           <h2>Code</h2>
           <p>
             <a href="http://github.com/jschementi">GitHub</a> and other projects. Here are my most recent projects:
@@ -244,19 +235,19 @@
         </div>
 
         <div id="ironruby" class="topic" style="display: none">
-          <a name="/code/ironruby"></a>
+          <a name="/projects/ironruby"></a>
           <h2>IronRuby</h2>
           <p>what I work on currently</p>
         </div>
 
         <div id="sourceaid" class="topic" style="display: none">
-          <a name="/code/sourceaid"></a>
+          <a name="/projects/sourceaid"></a>
           <h2>SourceAid</h2>
           <p>TODO</p>
         </div>
 
         <div id="assistment" class="topic" style="display: none">
-          <a name="/code/assistment"></a>
+          <a name="/projects/assistment"></a>
           <h2>Assistment</h2>
           <p>what I used to work on</p>
         </div>
@@ -270,13 +261,7 @@
             Loading ...
           </div>
           <script type="text/javascript">
-            $(document).ready(function() {
-              $.get('jimmy_schementi.html', function(data, status) {
-                var jData = $($(data)[9])
-                $('.section', jData).attr('class', 'resume_section')
-                $('#resume_contents').html(jData)
-              });
-            });
+            renderResume();
           </script>
         </div>
 
@@ -285,9 +270,7 @@
     </div>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.area, .island, li.rss_item').corner('round tr br 10px');
-      });
+      roundTheWorld();
     </script>
   </body>
 </html>
