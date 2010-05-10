@@ -269,7 +269,7 @@ a:hover {
   width: 46em;
 }
 
-/* section */
+/* homepage */
 
   .section {
     position: relative;
@@ -474,4 +474,23 @@ a:hover {
   #home-art {
     float: left;
     width: 15em;
+  }
+  
+/* subpages */
+
+  .subpage {
+    margin: 0 25px;
+    letter-spacing: -0.01em;
+    font-size: 1.75em;
+  }
+
+  #code #github-badge-wrapper {
+    float: right;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    letter-spacing: 0;
+  }
+  #code #github-badge-wrapper #github-badge {
+    padding: 5px;
   }
