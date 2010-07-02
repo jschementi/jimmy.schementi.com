@@ -1,3 +1,8 @@
+// from http://www.geekpedia.com/code20_Strip-HTML-using-JavaScript.html
+String.prototype.stripHTML = function() {
+  return this.replace(/<(?:.|\s)*?>/g, "");
+};
+
 // from http://stackoverflow.com/questions/901115/get-querystring-with-jquery
 var getParameterByName = function (name) {
   name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
@@ -95,11 +100,27 @@ var enableColorbox = function(obj) {
 
 var generateBlogFeed = function() {
   $(document).ready(function() {
-    $('.rss_box li').removeAttr('style');
-    $('a.rss_item').removeAttr('target');
-    $('#home-writing .rss_box li:first-child').hide();
-    $('.rss_item p').hide();
+    jQuery.getFeed({
+      url: '/blog.rss', 
+      success: function(feed) {
+        $('#most-recent-post .rss_box .rss_items').append(renderBlogPost(feed.items[0]));
+        for(i = 1; i < 4; i++) {
+          $('#home-writing .rss_box .rss_items').append(renderBlogPost(feed.items[i]));
+        }
+      }
+    });
   });
+}
+
+var renderBlogPost = function(post) {
+  post_div = $('#blog_post_template li').clone();
+  post_div.find('a.rss_item').html(post.title);
+  post_div.find('a.rss_item').attr('title', post.title);
+  post_div.find('a.rss_item').attr('href', post.link);
+  post_div.find('div').html(post.description.stripHTML().substring(0, 200) + '...');
+  
+  registerIslandEvents(post_div);
+  return post_div;
 }
 
 var generatePhotoFeed = function() {
@@ -133,13 +154,17 @@ var renderResume = function() {
 
 var roundTheWorld = function() {
   $(document).ready(function() {
-    $('.area, .island, li.rss_item').corner('round tr br 10px');
+    $('.area, .island').corner('round tr br 10px');
     //$('#navigation a').corner('round 5px');
     //$('.section').not('#most-recent-post, #home-writing').corner('round tl bl 10px');
     //$('#most-recent-post').corner('round tl 10px')
     //$('#home-writing').corner('round bl 10px')
     //$('#most-recent-post .rss_item a, #home-writing .rss_item a').corner('round 5px');
   });
+}
+
+var registerIslandEvents = function(item) {
+  item.hover(islandMouseIn, islandMouseOut).click(islandClick);
 }
 
 $(document).ready(function() {
@@ -155,7 +180,7 @@ $(document).ready(function() {
   
   $.address.value(location.hash.length == 0 ? '/' : location.hash.replace(/^#/, ''));  
   
-  $('.island, li.rss_item').hover(islandMouseIn, islandMouseOut).click(islandClick);
+  registerIslandEvents($('.island, li.rss_item'))
 
   if (document.body.id.length == 0) {
     document.body.id = getParameterByName('t');
