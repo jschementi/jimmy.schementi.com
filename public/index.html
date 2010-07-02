@@ -157,15 +157,7 @@
           <div class='container' style='clear: none; margin-top:45em;'>
             <div id="home-photos" class='section'>
               <h2><a href='http://flickr.com/photos/jschementi' target='_blank'>Flickr</a></h2>
-              
-              <!--<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=a"  type="text/javascript"></script>
-              <noscript>
-              <a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fapi.flickr.com%2Fservices%2Ffeeds%2Fphotos_public.gne%3Fid%3D24458122%40N00%26lang%3Den-us%26format%3Drss_200&amp;num=25&amp;html=y">View RSS feed</a>
-              </noscript>-->
-
-              <script type='text/javascript'>
-                generatePhotoFeed();
-              </script>
+              <script type="text/javascript" src="http://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=1486775479faf0d20ae61c3cc1a137a8&user_id=24458122%40N00&format=json&jsoncallback=generateHomepagePhotoFeed"></script>
             </div>
             
             <!--

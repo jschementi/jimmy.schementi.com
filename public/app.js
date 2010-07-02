@@ -123,15 +123,21 @@ var renderBlogPost = function(post) {
   return post_div;
 }
 
-var generatePhotoFeed = function() {
+var generateHomepagePhotoFeed = function(rsp) {
+  if (rsp.stat != "ok") {
+  	return;
+  }
   $(document).ready(function() {
-    $('#home-photos .rss-box').replaceWith($('#home-photos .rss-item p a img').parent().addClass('flickr'));
-    $('#home-photos img').removeAttr('width').removeAttr('height');
-    $('#home-photos img').each(function() {
-      $(this).attr('src',
-        $(this).attr('src').split('m.jpg')[0] + 's.jpg') 
-      $(this).parent().attr('rel', 'flickr-latest');
-    });
+    for (i = 0; i < 20; i++) {
+      p = rsp.photos.photo[i];
+      thumbnail = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_s.jpg";
+      page = "http://www.flickr.com/photos/jschementi/"+ p.id;
+      medium = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_b.jpg";
+      a = $(document.createElement('a')).addClass('flickr').attr('href', medium).attr('rel', 'flickr-latest');
+      img = $(document.createElement('img')).attr('src', thumbnail);
+      a.html(img);
+      $('#home-photos').append(a);
+    }
     $("a[rel='flickr-latest']").colorbox({width:"80%", height:"80%", iframe:true});
   });
 }
