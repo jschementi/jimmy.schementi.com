@@ -30,8 +30,10 @@ var navigateTo = function(topic) {
 
   if (!isHome()) {
     hideBackground();
+    $("#twitter-status").hide();
   } else {
     showBackground();
+    $("#twitter-status").show();
   }
 
   actualTopic = topic.replace(/^\//, '++')
@@ -109,6 +111,30 @@ var generateBlogFeed = function() {
         }
       }
     });
+  });
+}
+
+var noAtMsgs = true;
+
+var generateTwitterMsg = function() {
+  $(document).ready(function() {
+    jQuery.getFeed({ url: '/twitter.rss', success: function(feed) {
+      for (i = 0; i < feed.items.length; i++) {
+        item = feed.items[i];
+        msg = item.title.split("jschementi: ")[1];
+        if (!noAtMsgs || msg[0] != "@") {
+          status = $(document.createElement('span')).html("&ldquo;" + msg + "&rdquo;&nbsp;");
+          link = $(document.createElement('a')).
+            attr('href', 'http://twitter.com/jschementi').
+            attr('target', "_blank").
+            attr('title', 'follow jschementi on Twitter').
+            html("follow me on Twitter &raquo;");
+          $('#twitter-status').html(status);
+          $('#twitter-status').append(link);
+          break;
+        }
+      }
+    }});
   });
 }
 

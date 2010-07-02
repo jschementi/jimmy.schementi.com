@@ -92,7 +92,11 @@ a:hover {
   #sanfran div.island p.islandMouseOver {
     color: white;
   }
-  
+
+  #sanfran #twitter-status {
+    background-image:url(images/black-transparent.png);
+  }
+
 /* formal theme */
   
   body#formal {
@@ -138,6 +142,10 @@ a:hover {
   #formal div.island p.islandMouseOver {
     color: white;
   }
+
+  #formal #twitter-status {
+    background-image:url(images/black-transparent.png);
+  }
   
 /* guitar theme */
   
@@ -158,6 +166,10 @@ a:hover {
   #guitar li.rss_item.islandMouseOver,
   #guitar div.island p.islandMouseOver {
     color: black;
+  }
+
+  #guitar #twitter-status {
+    background-image:url(images/white-transparent.png);
   }
 
 /* header styles */
@@ -190,6 +202,13 @@ a:hover {
   #header h1 a:hover {
     color: #444;
   }*/
+
+  #page #twitter-status {
+    font-size:1.3em;
+    margin-left:1.2em;
+    margin-top:0.3em;
+    padding:0.3em;
+  }
 
 /* site main menu */
 
