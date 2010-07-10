@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Jimmy Schementi</title>
+
+    <script src="jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="colorbox/colorbox/jquery.colorbox.js" type="text/javascript"></script>
+    <script src="jquery.corner.js" type="text/javascript"></script>
+    <script src="jquery.address-1.2.js" type="text/javascript"></script>
+    <script src="jquery.jfeed.js" type="text/javascript"></script>
+    <script src="jquery.lightbox-0.5.pack.js" type="text/javascript"></script>
+    <script src="jquery.idTabs.pack.js" type="text/javascript"></script>
+
+    <link type="text/css" media="screen" rel="stylesheet" href="colorbox/example5/colorbox.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="jquery.lightbox-0.5.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="style.css" />
+    <!--[if gt IE 7]>
+      <link type="text/css" media="screen" rel="stylesheet" href="ie.css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="app.js"></script>
+    <!--[if gt IE 7]>
+      <script type="text/javascript" src="ie.js"></script>
+    <![endif]-->
+  </head>
+  <body id=''>
+    <a name="very-top"></a>
+
+    <div id="background">
+      <img class="image" alt="" src='' style='display: none' />
+    </div>
+
+    <div id="page">
+
+      <div id="header">
+        <div id="navigation">
+          <%= erb :_navigation, :layout => false %>
+          <div class="clear"></div>
+        </div>
+      </div>
+
+      <%= erb :_twitter_status, :layout => false %>
+
+      <div id="body">
+
+        <div id='home' class='topic' style="display: none">
+          <a name="/"></a>
+          <%= erb :_home, :layout => false %>
+        </div>
+
+        <div id="code" class='topic subpage' style="display: none">  
+          <a name="/projects"></a>
+          <%= erb :_projects, :layout => false %>
+        </div>
+
+        <div id="writing" class="topic subpage" style="display: none">
+          <a name="/writing"></a>
+          <%= erb :_writing, :layout => false %>
+        </div>
+
+        <div id="music" class="topic subpage" style="display: none">
+          <a name="/music"></a>
+          <%= erb :_music, :layout => false %>
+        </div>
+
+        <div id="photos" class="topic subpage" style="display: none">
+          <a name="/photos"></a>
+          <%= erb :_photos, :layout => false %>
+        </div>
+
+        <div id="art" class="topic subpage" style="display: none">
+          <a name="/art"></a>
+          <%= erb :_art, :layout => false %>
+        </div>
+
+        <div id="ironruby" class="topic subpage" style="display: none">
+          <a name="/projects/ironruby"></a>
+          <%= erb :_ironruby, :layout => false %>
+        </div>
+
+        <div id="sourceaid" class="topic subpage" style="display: none">
+          <a name="/projects/sourceaid"></a>
+          <%= erb :_sourceaid, :layout => false %>
+        </div>
+
+        <div id="assistment" class="topic subpage" style="display: none">
+          <a name="/projects/assistment"></a>
+          <%= erb :_assistment, :layout => false %>
+        </div>
+
+        <div id="resume" class="topic subpage" style="display: none">
+          <a name="/resume"></a>
+          <%= erb :_resume, :layout => false %>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      roundTheWorld();
+    </script>
+  </body>
+</html>

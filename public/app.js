@@ -1,3 +1,19 @@
+//$(document).ready(function () {
+//  $(".example8").colorbox({width:"50%", inline:true, href:"#inline_example1"});
+//});
+
+//$(function() {
+//  $('#gallery a').lightBox({fixedNavigation:true});
+//});
+
+//$(function() {
+//  $('ul.idTabs').idTabs('overview');
+//});
+
+//$(function() {
+//  $('a[@rel*=lightbox]').lightBox();
+//});
+
 // from http://www.geekpedia.com/code20_Strip-HTML-using-JavaScript.html
 String.prototype.stripHTML = function() {
   return this.replace(/<(?:.|\s)*?>/g, "");

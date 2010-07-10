@@ -6,7 +6,7 @@ require 'sinatra'
 require 'json'
 
 get '/' do
-  File.open('public/index.html'){ |f| f.read }
+  erb :index
 end
 
 def get_feed(url)
