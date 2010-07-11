@@ -10,10 +10,6 @@
 //  $('ul.idTabs').idTabs('overview');
 //});
 
-//$(function() {
-//  $('a[@rel*=lightbox]').lightBox();
-//});
-
 // from http://www.geekpedia.com/code20_Strip-HTML-using-JavaScript.html
 String.prototype.stripHTML = function() {
   return this.replace(/<(?:.|\s)*?>/g, "");
@@ -180,7 +176,7 @@ var generateHomepagePhotoFeed = function(rsp) {
       a.html(img);
       $('#home-photos').append(a);
     }
-    $("a[rel='flickr-latest']").colorbox({width:"80%", height:"80%", iframe:true});
+    $("a[rel='flickr-latest']").lightBox();
   });
 }
 
