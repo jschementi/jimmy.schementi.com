@@ -98,8 +98,11 @@
 <div class='container' style='clear: none; margin-top:45em;'>
   <div id="home-photos" class='section'>
     <h2><a href='http://flickr.com/photos/jschementi' target='_blank'>Flickr</a></h2>
-    <script type="text/javascript" src="http://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=1486775479faf0d20ae61c3cc1a137a8&user_id=24458122%40N00&format=json&jsoncallback=generateHomepagePhotoFeed"></script>
   </div>
+
+  <script type="text/javascript">
+    generateHomepagePhotoFeed();
+  </script>
 
   <!--
   <div id='home-music' class='section'>

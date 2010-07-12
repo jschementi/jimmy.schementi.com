@@ -27,6 +27,22 @@ var getParameterByName = function (name) {
     return results[1];
 }
 
+// from http://stackoverflow.com/questions/18912/how-to-find-keys-of-a-hash
+var keys = function(obj) {
+  var k = [];
+  for(i in obj) {
+    if (obj.hasOwnProperty(i)) {
+      k.push(i);
+    }
+  }
+  return k;
+}
+
+// from http://stackoverflow.com/questions/944436/escaping-text-with-jquery-append
+var escapeHTML = function(str) {
+  return $(document.createTextNode($('<div/>').html(str).html())).text();
+}
+
 var showBackground = function() {
   $(document.body).removeClass('hide-background');
   $('#background').show()
@@ -131,21 +147,21 @@ var noAtMsgs = true;
 var generateTwitterMsg = function() {
   $(document).ready(function() {
     jQuery.getFeed({ url: '/twitter.rss', success: function(feed) {
-      for (i = 0; i < feed.items.length; i++) {
-        item = feed.items[i];
+      $.each(feed.items, function(i) {
+        var item = feed.items[i];
         msg = item.title.split("jschementi: ")[1];
         if (!noAtMsgs || msg[0] != "@") {
-          status = $(document.createElement('span')).html("&ldquo;" + msg + "&rdquo;&nbsp;");
-          link = $(document.createElement('a')).
+          status = "&ldquo;" + msg + "&rdquo;&nbsp;";
+          link = $('<a/>').
             attr('href', 'http://twitter.com/jschementi').
             attr('target', "_blank").
             attr('title', 'follow jschementi on Twitter').
             html("follow me on Twitter &raquo;");
-          $('#twitter-status').html(status);
+          $('#twitter-status').append(status);
           $('#twitter-status').append(link);
-          break;
+          return false;
         }
-      }
+      });
     }});
   });
 }
@@ -161,23 +177,51 @@ var renderBlogPost = function(post) {
   return post_div;
 }
 
+var FLICKR_API = 'http://api.flickr.com/services/rest/?method=';
+var FLICKR_API_KEY = '1486775479faf0d20ae61c3cc1a137a8';
+var flickr_api = function(method, opts) {
+  opts['api_key'] = FLICKR_API_KEY;
+  opts['format'] = 'json';
+  retval = FLICKR_API + method + $.map(keys(opts), function(i) {
+    return "&" + i + '=' + opts[i];
+  }).join('');
+  return retval;
+}
+
 var generateHomepagePhotoFeed = function(rsp) {
-  if (rsp.stat != "ok") {
-  	return;
-  }
-  $(document).ready(function() {
-    for (i = 0; i < 20; i++) {
-      p = rsp.photos.photo[i];
-      thumbnail = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_s.jpg";
-      page = "http://www.flickr.com/photos/jschementi/"+ p.id;
-      medium = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_b.jpg";
-      a = $(document.createElement('a')).addClass('flickr').attr('href', medium).attr('rel', 'flickr-latest');
-      img = $(document.createElement('img')).attr('src', thumbnail);
-      a.html(img);
-      $('#home-photos').append(a);
+  $.getJSON(
+    flickr_api('flickr.people.getPublicPhotos', {user_id: '24458122%40N00', jsoncallback: '?'}),
+    function(rsp) {
+      if (rsp.stat != "ok") {
+        return;
+      }
+      $(document).ready(function() {
+        $.each(rsp.photos.photo, function(i) {
+          if (i >= 25) {
+            return false;
+          }
+          var p = rsp.photos.photo[i];
+          thumbnail = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_s.jpg";
+          var page = page = "http://www.flickr.com/photos/jschementi/"+ p.id;
+          medium = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/" + p.id + "_" + p.secret + "_b.jpg";
+          fpl = $(document.createElement('a')).
+            attr('href', page).attr('target', '_blank').html(p.title);
+          a = $(document.createElement('a')).addClass('flickr').attr({
+            'href': medium,
+            'rel': 'flickr-latest',
+            'title': escapeHTML(fpl),
+          });
+          img = $(document.createElement('img')).attr({
+            'src': thumbnail,
+            'alt': p.title
+          });
+          a.html(img);
+          $('#home-photos').append(a);
+        });
+        $("a[rel='flickr-latest']").lightBox();
+      });
     }
-    $("a[rel='flickr-latest']").lightBox();
-  });
+  );  
 }
 
 var renderResume = function() {
@@ -199,11 +243,6 @@ var renderResume = function() {
 var roundTheWorld = function() {
   $(document).ready(function() {
     $('.area, .island').corner('round tr br 10px');
-    //$('#navigation a').corner('round 5px');
-    //$('.section').not('#most-recent-post, #home-writing').corner('round tl bl 10px');
-    //$('#most-recent-post').corner('round tl 10px')
-    //$('#home-writing').corner('round bl 10px')
-    //$('#most-recent-post .rss_item a, #home-writing .rss_item a').corner('round 5px');
   });
 }
 
@@ -217,6 +256,7 @@ $(document).ready(function() {
   // copy all the anchors to the top of the page ...
   anchors = $('a[name^=/]');
   anchors.clone().prependTo('body');
+
   // and then rename the anchors ...
   anchors.each(function() {
     $(this).attr('name', $(this).attr('name').replace(/^\//, '++'));
@@ -246,7 +286,5 @@ $.address.change(function (event) {
                 return n.substr(0, 1).toUpperCase() + n.substr(1);
               }).concat(event.parameters.id ? event.parameters.id.split('.') : []);
 
-  
   $.address.title([title].concat(names).join(' > '));
-
 });
