@@ -21,7 +21,12 @@ a:hover {
   text-decoration: underline;
 }
 
-#page {
+#wrap {
+  text-align: center;
+  width: 100%;
+}
+
+#main, #footer .inside {
   margin: 0 auto;
   text-align: left;
   width: 92.7em;
@@ -203,7 +208,7 @@ a:hover {
     color: #444;
   }*/
 
-  #page #twitter-status {
+  #twitter-status {
     font-size:1.5em;
     margin-left:1.5em;
     margin-top:0.3em;
@@ -513,4 +518,20 @@ a:hover {
   }
   #code #github-badge-wrapper #github-badge {
     padding: 5px;
+  }
+
+/* footer */
+
+  #footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border-top: 3px solid #444;
+  }
+
+  #footer .inside {
+  }
+
+  #footer .inside p {
+    font-size: 1.35em;
   }

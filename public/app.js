@@ -268,6 +268,11 @@ var renderResume = function() {
 var roundTheWorld = function() {
   $(document).ready(function() {
     $('.area, .island').corner('round tr br 10px');
+    $('#navigation a').corner('round 5px');
+    $('.section').not('#most-recent-post, #home-writing').corner('round tl bl 10px');
+    $('#most-recent-post').corner('round tl 10px')
+    $('#home-writing').corner('round bl 10px')
+    $('#most-recent-post .rss_item a, #home-writing .rss_item a').corner('round 5px');
   });
 }
 
