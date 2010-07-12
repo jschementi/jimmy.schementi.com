@@ -10,7 +10,6 @@
     <script src="jquery.address-1.2.js" type="text/javascript"></script>
     <script src="jquery.jfeed.js" type="text/javascript"></script>
     <script src="jquery.lightbox-0.5.js" type="text/javascript"></script>
-    <script src="jquery.idTabs.pack.js" type="text/javascript"></script>
 
     <link type="text/css" media="screen" rel="stylesheet" href="colorbox/example5/colorbox.css" />
     <link type="text/css" media="screen" rel="stylesheet" href="jquery.lightbox-0.5.css" />
@@ -89,8 +88,13 @@
           <%= erb :_assistment, :layout => false %>
         </div>
 
+        <div id="about" class="topic subpage" style="display: none">
+          <a name="/about"></a>
+          <%= erb :_about, :layout => false %>
+        </div>
+
         <div id="resume" class="topic subpage" style="display: none">
-          <a name="/resume"></a>
+          <a name="/about/resume" title="Jimmy Schementi - Software Developer"></a>
           <%= erb :_resume, :layout => false %>
         </div>
 

@@ -53,7 +53,20 @@ var hideBackground = function() {
   $('#background').hide()
 }
 
-var navigateTo = function(topic) {
+var title = document.title;
+
+var routes = {
+  '/home': '/',
+  '/resume': '/about/resume'
+}
+
+var navigateTo = function(navevent) {
+  var topic = navevent.path;
+
+  if (routes[topic] != null) {
+    topic = routes[topic];
+  }
+
   var isHome = function() { return topic == '/' }
 
   if (!isHome()) {
@@ -67,11 +80,23 @@ var navigateTo = function(topic) {
   actualTopic = topic.replace(/^\//, '++')
 
   $('.topic').hide();
-  var jtopic = $('a[name=' + actualTopic + ']').parent();
+  topicElement = $('a[name=' + actualTopic + ']');
+  var jtopic = topicElement.parent();
   jtopic.show();
 
+  toplevel_topic = isHome() ? '/' : ('/' + topic.split('/')[1])
+
   $('#navigation a').removeAttr('id');
-  $('#navigation a[href=#' + topic + ']').attr('id', 'active');
+  $('#navigation a[href=#' + toplevel_topic + ']').attr('id', 'active');
+
+  if (topicElement.attr('title') == '') {
+    var names = $.map(navevent.pathNames, function(n) {
+                  return n.substr(0, 1).toUpperCase() + n.substr(1);
+                }).concat(navevent.parameters.id ? navevent.parameters.id.split('.') : []);
+    $.address.title([title].concat(names).join(' > '));
+  } else {
+    $.address.title(topicElement.attr('title'));
+  }
 }
 
 var islandMouseIn = function () {
@@ -218,7 +243,7 @@ var generateHomepagePhotoFeed = function(rsp) {
           a.html(img);
           $('#home-photos').append(a);
         });
-        $("a[rel='flickr-latest']").lightBox();
+        $("a[rel='flickr-latest']").lightBox({fixedNavigation:true});
       });
     }
   );  
@@ -277,14 +302,4 @@ $(document).ready(function() {
   setBackground(document.body.id);
 })
 
-var title = document.title;
-
-$.address.change(function (event) {
-  navigateTo(event.path);
-  
-  var names = $.map(event.pathNames, function(n) {
-                return n.substr(0, 1).toUpperCase() + n.substr(1);
-              }).concat(event.parameters.id ? event.parameters.id.split('.') : []);
-
-  $.address.title([title].concat(names).join(' > '));
-});
+$.address.change(navigateTo);
