@@ -18,10 +18,18 @@ def get_feed(url)
   res.body
 end
 
+get '/blog' do
+  redirect 'http://blog.jimmy.schementi.com'
+end
+
 get '/blog.rss' do
   get_feed 'http://feeds.feedburner.com/jimmy-thinking'
 end
 
 get '/twitter.rss' do
   get_feed 'http://twitter.com/statuses/user_timeline/8007442.rss'
+end
+
+get %r{/([\w|/]+)} do |c|
+  redirect "/#/#{c}"
 end

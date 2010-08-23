@@ -55,9 +55,15 @@ var hideBackground = function() {
 
 var title = document.title;
 
+// TODO: really should be named "redirects"
 var routes = {
   '/home': '/',
-  '/resume': '/about/resume'
+  '/resume': '/about/resume',
+  // HACK: redirecting these URLs to the main /projects page causes the
+  // project-specific anchors to take effect.
+  '/projects/ironruby': '/projects',
+  '/projects/sourceaid': '/projects',
+  '/projects/assistment': '/projects'
 }
 
 var navigateTo = function(navevent) {
@@ -176,13 +182,14 @@ var generateTwitterMsg = function() {
         var item = feed.items[i];
         msg = item.title.split("jschementi: ")[1];
         if (!noAtMsgs || msg[0] != "@") {
-          status = "&ldquo;" + msg + "&rdquo;&nbsp;";
           link = $('<a/>').
             attr('href', 'http://twitter.com/jschementi').
             attr('target', "_blank").
             attr('title', 'follow jschementi on Twitter').
             html("follow me on Twitter &raquo;");
-          $('#twitter-status').append(status);
+          $('#twitter-status').append("&ldquo;");
+          $('#twitter-status').append(msg);
+          $('#twitter-status').append("&rdquo;&nbsp;");
           $('#twitter-status').append(link);
           return false;
         }
@@ -283,8 +290,8 @@ var registerIslandEvents = function(item) {
 $(document).ready(function() {
   $('.topic').hide();
 
-  // copy all the anchors to the top of the page ...
-  anchors = $('a[name^=/]');
+  // copy all anchors that don't have the "omit" class to the top of the page ...
+  anchors = $('a[name^=/][class!=omit]');
   anchors.clone().prependTo('body');
 
   // and then rename the anchors ...
