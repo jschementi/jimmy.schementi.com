@@ -30,6 +30,31 @@ get '/twitter.rss' do
   get_feed 'http://twitter.com/statuses/user_timeline/8007442.rss'
 end
 
-get %r{/([\w|/]+)} do |c|
-  redirect "/#/#{c}"
+%W{/projects /writing /music /photos /about /art /about/resume}.each do |i|
+  get i do
+    redirect "/##{i}"
+  end
 end
+  
+get /\/(.+)/ do |c|
+  path = File.join(File.dirname(__FILE__), 'public', c)
+  if File.exist? path
+    url = "/#{c}"
+    url = url[0..-2] if url[-1] == '/'
+    if File.directory? path
+      indexhtml = File.join(path, "index.html")
+      indexphp = File.join(path, "index.php")
+      if File.exist?(indexhtml)
+        url = "#{url}/"
+      elsif File.exist?(indexphp)
+        url = "#{url}/index.php"
+      else
+        throw :halt, [404, "Not found"]
+      end
+    end
+    redirect url
+  else
+    throw :halt, [404, "Not found"]
+  end
+end
+
