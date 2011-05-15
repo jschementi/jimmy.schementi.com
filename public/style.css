@@ -358,6 +358,9 @@ a:hover {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    /* http://dev.opera.com/articles/view/css3-transitions-and-2d-transforms/ */
+    -o-transform: rotate(-90deg);
   }
 
 /* writing section */
