@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.)?jimmy\.schementi\.com$
+RewriteRule ^blog(/.*)? http://blog.jimmy.schementi.com$1 [R=301,L]
+Redirect 301 /silverline http://schementi.com/silverline
