@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.6: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.9: http://docutils.sourceforge.net/" />
 <title>Jimmy Schementi - Software Developer</title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
+:Id: $Id$
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -46,6 +46,10 @@ blockquote.epigraph {
 
 dl.docutils dd {
   margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
 
 /* Uncomment (and remove this text!) to get bold-faced definition list terms
 dl.docutils dt {
@@ -157,15 +161,21 @@ h2.subtitle {
 hr.docutils {
   width: 75% }
 
-img.align-left, .figure.align-left{
+img.align-left, .figure.align-left, object.align-left {
   clear: left ;
   float: left ;
   margin-right: 1em }
 
-img.align-right, .figure.align-right {
+img.align-right, .figure.align-right, object.align-right {
   clear: right ;
   float: right ;
   margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .align-left {
   text-align: left }
@@ -179,7 +189,7 @@ img.align-right, .figure.align-right {
 
 /* reset inner alignment in figures */
 div.align-right {
-  text-align: left }
+  text-align: inherit }
 
 /* div.align-center * { */
 /*   text-align: left } */
@@ -239,7 +249,7 @@ pre.address {
   margin-top: 0 ;
   font: inherit }
 
-pre.literal-block, pre.doctest-block {
+pre.literal-block, pre.doctest-block, pre.math {
   margin-left: 2em ;
   margin-right: 2em }
 
@@ -318,109 +328,102 @@ ul.auto-toc {
 </tr>
 </tbody>
 </table>
-<p>Professional software developer and program manager experienced in building
-programming languages and developer tools. Interested in continuing to make
-software that makes people's lives easier, including my own.</p>
+<p>Software developer experienced in building programming languages,
+developer tools, and financial systems.
+Interested in continuing to make software that makes people's lives easier,
+including my own.</p>
 <div class="section" id="skills">
 <h1>Skills</h1>
-<p>Ruby, Python, JavaScript, C#, C++, compilers, web development, and
-user-interface design.
+<p>Ruby, Python, JavaScript, C#, Java, C++, compiler construction, web development,
+and user-interface design.
 <em>See each position for more specific skills/experiences.</em></p>
 </div>
 <div class="section" id="experience">
 <h1>Experience</h1>
-<div class="section" id="microsoft">
-<h2>Microsoft</h2>
-<p>Program Manager (7/2007 - Present)</p>
-<blockquote>
-<p>Project manager and software developer for open-source programming languages
-and tools, specifically IronRuby, IronPython, and the Dynamic Language
-Runtime (DLR). Oversee the following areas:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://ironruby.net">IronRuby</a>, which involves release management,
-specification and documentation writing, evangelism through blogs, public
-appearances, and various social media, and development/compiler work where
-needed. <a class="reference external" href="http://ironruby.codeplex.com/releases/view/25901">IronRuby 1.0</a>
-shipped in April 2010.</li>
-<li><a class="reference external" href="http://github.com/jschementi/ironruby/tree/master/Hosts">DLR Hosts</a>,
-which integrate DLR-languages with special application-models. I owned
-the spec-writing, coding, and testing of each project. See &quot;Open Source
-Projects&quot; section for more info.</li>
-<li>Process streamlining - make sure this small team in a huge company has the
-tinyiest process overhead as possible. Communicated with lawyers and
-management about what could be streamlined, and implemented the changes --
-instead of weeks of reviews it's boiled down to 1 meeting and a couple emails.</li>
-<li><a class="reference external" href="http://langnetsymposium.com">Lang.NET</a>, a 3-day conference of
-programming language and developer tool developers.</li>
-<li>Websites - designed and built the main websites
-for both <a class="reference external" href="http://ironruby.net">IronRuby</a> and <a class="reference external" href="http://ironpython.net">IronPython</a>.</li>
-</ul>
+<div class="section" id="lab49-new-york-ny">
+<h2>Lab49 - New York, NY</h2>
+<div class="section" id="consultant-8-2010-present">
+<h3>Consultant (8/2010 - Present)</h3>
+<dl class="docutils">
+<dt>A Large Consumer Bank</dt>
+<dd>Build a web-based system for accessing data on positions, trades, and reports.
+<em>javascript, html, java</em></dd>
+<dt>A Global Financial Services Firm</dt>
+<dd>Analyzed all technical aspects of their Financial Advisor system, and
+delivered a written proposal for what technical changes would be required to
+position the project for future stability/maintainability, and a timeline for
+how to execute the proposal.</dd>
+<dt>An Asset Management Firm</dt>
+<dd>Built a web-based system to give the firm more insight into financial
+instruments using quantitative methods. The system allowed Quantitative
+Analysts to define quantitative models and visualizations, written in Python,
+using well-known data sources, computational procedures, and graphical
+visualization, provided by the system. The system managed the execution of
+these models, and presents the visualization of the resultant computations to
+the end user when requested.
+<em>Python, IronPython, C#, .NET, Silverlight, SQLServer, quantitative analysis.</em></dd>
+</dl>
+</div>
+</div>
+<div class="section" id="microsoft-redmond-wa">
+<h2>Microsoft - Redmond, WA</h2>
+<div class="section" id="program-manager-7-2007-7-2010">
+<h3>Program Manager (7/2007 - 7/2010)</h3>
+<p>Project manager and software developer for open-source programming languages,
+compilers, and developer tools, specifically IronRuby, IronPython, and the
+Dynamic Language Runtime (DLR).</p>
+<dl class="docutils">
+<dt><a class="reference external" href="http://ironruby.net">IronRuby</a></dt>
+<dd>A a dynamic language port to the .NET framework. Executed release
+management, specification and documentation writing, evangelism through
+blogs, public appearances, and various social media, and
+development/compiler work where needed. 1.0 of the language shipped in
+Q2 2010, and 1.1 shipped in Q3 2010.</dd>
+<dt><a class="reference external" href="http://github.com/jschementi/ironruby/tree/master/Hosts">DLR Hosts</a></dt>
+<dd>Dynamic language hosting in various application-models: owned the
+spec-writing, coding, and testing of each project, which gave users ways of
+using dynamic languages in a first-class way in various .NET application
+models.</dd>
+<dt>Open source process streamlining</dt>
+<dd>Communicated with lawyers and management about what could be streamlined,
+and implemented the changes.</dd>
+<dt><a class="reference external" href="http://langnetsymposium.com">Lang.NET</a></dt>
+<dd>Conference organization: organized and executed a 3-day conference for
+programming language and developer tool developers.</dd>
+<dt>Web Development</dt>
+<dd>Designed and built the main websites for`IronRuby &lt;<a class="reference external" href="http://ironruby.net">http://ironruby.net</a>&gt;`_
+and <a class="reference external" href="http://ironpython.net">IronPython</a>.</dd>
+</dl>
 <p><em>ruby, python, C#, .NET, compilers, Silverlight, Rails, ASP.NET, project management, GIT, TFS, working at a huge company</em></p>
-</blockquote>
-<p>Program Manager Intern (Summer 2006)</p>
-<blockquote>
+</div>
+<div class="section" id="program-manager-intern-summer-2006">
+<h3>Program Manager Intern (Summer 2006)</h3>
 <p>Worked on the IronPython team, specifically working on Windows Presentation
 Foundation and ASP.NET integration.</p>
 <p><em>python, C#, WPF, ASP.NET</em></p>
-</blockquote>
 </div>
-<div class="section" id="worcester-polytechnic-institute-ai-lab">
-<h2>Worcester Polytechnic Institute AI Lab</h2>
-<p>Assistment.org Lead Developer (1-6/2007)</p>
-<blockquote>
-<p>Lead WPI's Artifical Intelligence lab in a redesign/rebuild of
-<a class="reference external" href="http://assistment.org">Assistment</a>, an intelligent tutoring system.
-Everything was re-thought, from the user-interface designed to the
-software that ran the system; originally written in Java it was
-rewritten using <a class="reference external" href="http://rubyonrails.org">Ruby on Rails</a>. Not only was the
-system easier to manage and maintain, it also had more-complete features
-than the original. The system was gradually rolled out to schools, and it is
-still in use today.</p>
-<p><em>ruby, Rails, ITS, user-interface design, Java, HTML/CSS, JavaScript</em></p>
-</blockquote>
 </div>
-<div class="section" id="general-electric">
-<h2>General Electric</h2>
-<p>Information Management Leadership Program Intern (Summer 2005)</p>
-<blockquote>
+<div class="section" id="worcester-polytechnic-institute-ai-lab-worcester-ma">
+<h2>Worcester Polytechnic Institute AI Lab, Worcester, MA</h2>
+<div class="section" id="lead-developer-1-6-2007">
+<h3>Lead Developer (1-6/2007)</h3>
+<p><a class="reference external" href="http://assistment.org">Assistment</a>: lead a redesign/rebuild of an
+intelligent tutoring system. Originally written in Java, it was redesigned
+using Ruby on Rails, which resulted in a system easier to manage and maintain,
+with a more-complete features than the original. The system was gradually
+rolled out to schools, and it is still in use and actively developed today.</p>
+<p><em>ruby, Rails, intelligent-tutoring systems, user-interface design, Java, HTML/CSS, JavaScript</em></p>
+</div>
+</div>
+<div class="section" id="general-electric-danbury-ct">
+<h2>General Electric, Danbury, CT</h2>
+<div class="section" id="information-management-leadership-program-intern-summer-2005">
+<h3>Information Management Leadership Program Intern (Summer 2005)</h3>
 <p>Lead a user-acceptance testing effort between teams in US and India.</p>
 <p><em>project management, user-acceptance testing</em></p>
-</blockquote>
-<p>See my <a class="reference external" href="http://www.linkedin.com/in/jschementi">LinkedIn profile</a> for a
-more-complete job history.</p>
-<!-- Entreprenurial experience: "Schementec"
-+++++++++++++++++++++++++++++++++++++++++
-Computer repair and web development, Summer 2004
-
-  Made house calls for computer repairs.
-
-  *marketing, advertising, computer hardware*
-
-SMPL Technologies
-+++++++++++++++++
-Programmer, Summer/Winter 2004
-
-  Wrote a router statistics management portal. Physically helped build a
-  network room and wire offices for ethernet.
-
-  *perl, HTML, Cisco routers, ethernet cable crimping*
-
-French Woods Festival of the Performing Arts
-++++++++++++++++++++++++++++++++++++++++++++
-Network Administrator/Computer Technician/Bunk Counselor, Summer 2003
-
-  Supervised a 100-computer lab, 20 computer office Apple Mac OS X computers,
-  and 4 employees. Repaired new and old Apple Hardware. Bunk counselor for 50
-  10-year-olds.
-
-  *Mac OSX, management, herding children*
-
-American Technion Society
-+++++++++++++++++++++++++
-
-Jr. Network Administrator, Summer 2002
-
-Help Desk and Support, Summer 2001 -->
+<p><em>See my `LinkedIn profile &lt;http://www.linkedin.com/in/jschementi&gt;`_ for a
+more-complete job history.</em></p>
+</div>
 </div>
 </div>
 <div class="section" id="education">

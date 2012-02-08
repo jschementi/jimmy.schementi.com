@@ -1,0 +1,2 @@
+rst2pdf ../public/jimmy_schementi.txt -o ../public/jimmy_schementi.pdf
+python `which rst2html.py` ../public/jimmy_schementi.txt > ../public/jimmy_schementi.html

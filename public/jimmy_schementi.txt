@@ -1,125 +1,125 @@
-====================================
-Jimmy Schementi - Software Developer
-====================================
+======================================
+ Jimmy Schementi - Software Developer
+======================================
 :Email: jimmy@schementi.com
 :Phone: 516.382.2557
 :Web: http://jimmy.schementi.com
 
-
-Professional software developer and program manager experienced in building 
-programming languages and developer tools. Interested in continuing to make
-software that makes people's lives easier, including my own.
+Software developer experienced in building programming languages, 
+developer tools, and financial systems.
+Interested in continuing to make software that makes people's lives easier,
+including my own.
 
 Skills
 ------
-Ruby, Python, JavaScript, C#, C++, compilers, web development, and
-user-interface design.
+Ruby, Python, JavaScript, C#, Java, C++, compiler construction, web development,
+and user-interface design.
 *See each position for more specific skills/experiences.*
 
 
 Experience
 ----------
 
-Microsoft
-+++++++++
-Program Manager (7/2007 - Present)
 
-  Project manager and software developer for open-source programming languages
-  and tools, specifically IronRuby, IronPython, and the Dynamic Language 
-  Runtime (DLR). Oversee the following areas:
-  
-  - `IronRuby <http://ironruby.net>`_, which involves release management, 
-    specification and documentation writing, evangelism through blogs, public 
-    appearances, and various social media, and development/compiler work where
-    needed. `IronRuby 1.0 <http://ironruby.codeplex.com/releases/view/25901>`_
-    shipped in April 2010.
-  
-  - `DLR Hosts <http://github.com/jschementi/ironruby/tree/master/Hosts>`_,
-    which integrate DLR-languages with special application-models. I owned
-    the spec-writing, coding, and testing of each project. See "Open Source
-    Projects" section for more info.
-  
-  - Process streamlining - make sure this small team in a huge company has the
-    tinyiest process overhead as possible. Communicated with lawyers and
-    management about what could be streamlined, and implemented the changes --
-    instead of weeks of reviews it's boiled down to 1 meeting and a couple emails.
-  
-  - `Lang.NET <http://langnetsymposium.com>`_, a 3-day conference of
-    programming language and developer tool developers.
-    
-  - Websites - designed and built the main websites
-    for both `IronRuby <http://ironruby.net>`_ and `IronPython <http://ironpython.net>`_.
-  
-  *ruby, python, C#, .NET, compilers, Silverlight, Rails, ASP.NET, project management, GIT, TFS, working at a huge company*
+Lab49 - New York, NY
+++++++++++++++++++++
+
+Consultant (8/2010 - Present)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A Large Consumer Bank
+  Build a web-based system for accessing data on positions, trades, and reports. 
+  *javascript, html, java*
+
+A Global Financial Services Firm
+  Analyzed all technical aspects of their Financial Advisor system, and
+  delivered a written proposal for what technical changes would be required to
+  position the project for future stability/maintainability, and a timeline for
+  how to execute the proposal.
+
+An Asset Management Firm
+  Built a web-based system to give the firm more insight into financial
+  instruments using quantitative methods. The system allowed Quantitative
+  Analysts to define quantitative models and visualizations, written in Python,
+  using well-known data sources, computational procedures, and graphical
+  visualization, provided by the system. The system managed the execution of
+  these models, and presents the visualization of the resultant computations to
+  the end user when requested.
+  *Python, IronPython, C#, .NET, Silverlight, SQLServer, quantitative analysis.*
+
+
+Microsoft - Redmond, WA
++++++++++++++++++++++++
+
+Program Manager (7/2007 - 7/2010)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Project manager and software developer for open-source programming languages,
+compilers, and developer tools, specifically IronRuby, IronPython, and the
+Dynamic Language Runtime (DLR). 
+
+`IronRuby <http://ironruby.net>`_
+  A a dynamic language port to the .NET framework. Executed release
+  management, specification and documentation writing, evangelism through
+  blogs, public appearances, and various social media, and
+  development/compiler work where needed. 1.0 of the language shipped in
+  Q2 2010, and 1.1 shipped in Q3 2010.
+
+`DLR Hosts <http://github.com/jschementi/ironruby/tree/master/Hosts>`_
+  Dynamic language hosting in various application-models: owned the
+  spec-writing, coding, and testing of each project, which gave users ways of
+  using dynamic languages in a first-class way in various .NET application
+  models.
+
+Open source process streamlining
+  Communicated with lawyers and management about what could be streamlined,
+  and implemented the changes.
+
+`Lang.NET <http://langnetsymposium.com>`_
+  Conference organization: organized and executed a 3-day conference for
+  programming language and developer tool developers.
+
+Web Development
+  Designed and built the main websites for`IronRuby <http://ironruby.net>`_
+  and `IronPython <http://ironpython.net>`_.
+
+*ruby, python, C#, .NET, compilers, Silverlight, Rails, ASP.NET, project management, GIT, TFS, working at a huge company*
 
 Program Manager Intern (Summer 2006)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Worked on the IronPython team, specifically working on Windows Presentation
-  Foundation and ASP.NET integration.
+Worked on the IronPython team, specifically working on Windows Presentation
+Foundation and ASP.NET integration.
 
-  *python, C#, WPF, ASP.NET*
+*python, C#, WPF, ASP.NET*
 
-Worcester Polytechnic Institute AI Lab
-++++++++++++++++++++++++++++++++++++++
-Assistment.org Lead Developer (1-6/2007)
+Worcester Polytechnic Institute AI Lab, Worcester, MA
++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-  Lead WPI's Artifical Intelligence lab in a redesign/rebuild of
-  `Assistment <http://assistment.org>`_, an intelligent tutoring system.
-  Everything was re-thought, from the user-interface designed to the
-  software that ran the system; originally written in Java it was
-  rewritten using `Ruby on Rails <http://rubyonrails.org>`_. Not only was the
-  system easier to manage and maintain, it also had more-complete features
-  than the original. The system was gradually rolled out to schools, and it is
-  still in use today.
-  
-  *ruby, Rails, ITS, user-interface design, Java, HTML/CSS, JavaScript*
+Lead Developer (1-6/2007)
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-General Electric
-++++++++++++++++
+`Assistment <http://assistment.org>`_: lead a redesign/rebuild of an
+intelligent tutoring system. Originally written in Java, it was redesigned
+using Ruby on Rails, which resulted in a system easier to manage and maintain,
+with a more-complete features than the original. The system was gradually
+rolled out to schools, and it is still in use and actively developed today.
+
+*ruby, Rails, intelligent-tutoring systems, user-interface design, Java, HTML/CSS, JavaScript*
+
+General Electric, Danbury, CT
++++++++++++++++++++++++++++++
+
 Information Management Leadership Program Intern (Summer 2005)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Lead a user-acceptance testing effort between teams in US and India.
-  
-  *project management, user-acceptance testing*
+Lead a user-acceptance testing effort between teams in US and India.
+
+*project management, user-acceptance testing*
 
 
-See my `LinkedIn profile <http://www.linkedin.com/in/jschementi>`_ for a
-more-complete job history.
-
-..
-  Entreprenurial experience: "Schementec"
-  +++++++++++++++++++++++++++++++++++++++++
-  Computer repair and web development, Summer 2004
-
-    Made house calls for computer repairs.
-
-    *marketing, advertising, computer hardware*
-
-  SMPL Technologies
-  +++++++++++++++++
-  Programmer, Summer/Winter 2004
-
-    Wrote a router statistics management portal. Physically helped build a
-    network room and wire offices for ethernet.
-
-    *perl, HTML, Cisco routers, ethernet cable crimping*
-
-  French Woods Festival of the Performing Arts
-  ++++++++++++++++++++++++++++++++++++++++++++
-  Network Administrator/Computer Technician/Bunk Counselor, Summer 2003
-
-    Supervised a 100-computer lab, 20 computer office Apple Mac OS X computers,
-    and 4 employees. Repaired new and old Apple Hardware. Bunk counselor for 50
-    10-year-olds.
-
-    *Mac OSX, management, herding children*
-
-  American Technion Society
-  +++++++++++++++++++++++++
-
-  Jr. Network Administrator, Summer 2002
-
-  Help Desk and Support, Summer 2001
+*See my `LinkedIn profile <http://www.linkedin.com/in/jschementi>`_ for a
+more-complete job history.*
 
 
 Education
