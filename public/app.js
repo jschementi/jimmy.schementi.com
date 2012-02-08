@@ -173,6 +173,11 @@ var generateBlogFeed = function() {
   });
 }
 
+function replaceURLWithHTMLLinks(text) {
+  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+  return text.replace(exp,"<a href='$1' class='replacedUrls'>$1</a>"); 
+}
+
 var noAtMsgs = true;
 
 var generateTwitterMsg = function() {
@@ -187,10 +192,12 @@ var generateTwitterMsg = function() {
             attr('target', "_blank").
             attr('title', 'follow jschementi on Twitter').
             html("follow me on Twitter &raquo;");
-          $('#twitter-status').append("&ldquo;");
-          $('#twitter-status').append(msg);
-          $('#twitter-status').append("&rdquo;&nbsp;");
+          //$('#twitter-status').append("&ldquo;");
+          $('#twitter-status').append(replaceURLWithHTMLLinks(msg));
+          //$('#twitter-status').append("&rdquo;");
+          $('#twitter-status').append("&nbsp;");
           $('#twitter-status').append(link);
+          $('#twitter-status .replacedUrls').lightBox();
           return false;
         }
       });

@@ -6,7 +6,7 @@
 << /F1 2 0 R
  /F2 3 0 R
  /F3 6 0 R
- /F4 7 0 R >>
+ /F4 14 0 R >>
 endobj
 % 'F1': class PDFType1Font 
 2 0 obj
@@ -65,58 +65,49 @@ endobj
  /Subtype /Type1
  /Type /Font >>
 endobj
-% 'F4': class PDFType1Font 
-7 0 obj
-% Font Helvetica-BoldOblique
-<< /BaseFont /Helvetica-BoldOblique
- /Encoding /WinAnsiEncoding
- /Name /F4
- /Subtype /Type1
- /Type /Font >>
-endobj
 % 'Annot.NUMBER3': class PDFDictionary 
-8 0 obj
+7 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://ironruby.net) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 62.69291
+ /Rect [ 85.69291
  221.7736
- 106.5829
+ 126.2629
  233.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Annot.NUMBER4': class PDFDictionary 
-9 0 obj
+8 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://github.com/jschementi/ironruby/tree/master/Hosts) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 62.69291
- 154.7736
- 113.8029
- 166.7736 ]
+ /Rect [ 85.69291
+ 149.7736
+ 134.0329
+ 161.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Page1': class PDFPage 
-10 0 obj
+9 0 obj
 % Page dictionary
 << /Annots [ 4 0 R
  5 0 R
- 8 0 R
- 9 0 R ]
- /Contents 43 0 R
+ 7 0 R
+ 8 0 R ]
+ /Contents 39 0 R
  /MediaBox [ 0
  0
  595.2756
  841.8898 ]
- /Parent 42 0 R
+ /Parent 38 0 R
  /Resources << /Font 1 0 R
  /ProcSet [ /PDF
  /Text
@@ -128,77 +119,86 @@ endobj
  /Type /Page >>
 endobj
 % 'Annot.NUMBER5': class PDFDictionary 
-11 0 obj
+10 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://langnetsymposium.com) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 62.69291
- 722.7736
- 109.3629
- 734.7736 ]
+ /Rect [ 85.69291
+ 720.7736
+ 130.7129
+ 732.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Annot.NUMBER6': class PDFDictionary 
-12 0 obj
+11 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://ironruby.net) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 315.2929
- 664.7736
- 393.1129
- 676.7736 ]
+ /Rect [ 171.2929
+ 654.7736
+ 214.6429
+ 666.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Annot.NUMBER7': class PDFDictionary 
-13 0 obj
+12 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://ironpython.net) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 430.0829
- 664.7736
- 478.4429
- 676.7736 ]
+ /Rect [ 234.1029
+ 654.7736
+ 282.4629
+ 666.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Annot.NUMBER8': class PDFDictionary 
-14 0 obj
+13 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://assistment.org) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 62.69291
- 484.7736
- 111.5929
- 496.7736 ]
+ /Rect [ 85.69291
+ 492.7736
+ 134.5929
+ 504.7736 ]
  /Subtype /Link
  /Type /Annot >>
+endobj
+% 'F4': class PDFType1Font 
+14 0 obj
+% Font Helvetica-BoldOblique
+<< /BaseFont /Helvetica-BoldOblique
+ /Encoding /WinAnsiEncoding
+ /Name /F4
+ /Subtype /Type1
+ /Type /Font >>
 endobj
 % 'Annot.NUMBER9': class PDFDictionary 
 15 0 obj
 << /A << /S /URI
  /Type /Action
- /URI (http://ironruby.net) >>
+ /URI (http://www.linkedin.com/in/jschementi) >>
  /Border [ 0
  0
  0 ]
- /Rect [ 62.69291
- 199.7736
- 106.5829
- 211.7736 ]
+ /Rect [ 99.37291
+ 324.7736
+ 169.9629
+ 336.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
@@ -206,14 +206,14 @@ endobj
 16 0 obj
 << /A << /S /URI
  /Type /Action
- /URI (http://ironpython.net) >>
+ /URI (http://ironruby.net) >>
  /Border [ 0
  0
  0 ]
  /Rect [ 62.69291
- 168.7736
- 115.4729
- 180.7736 ]
+ 204.7736
+ 106.5829
+ 216.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
@@ -221,14 +221,14 @@ endobj
 17 0 obj
 << /A << /S /URI
  /Type /Action
- /URI (http://ironpython.net/browser/) >>
+ /URI (http://ironpython.net) >>
  /Border [ 0
  0
  0 ]
  /Rect [ 62.69291
- 137.7736
- 96.59291
- 149.7736 ]
+ 173.7736
+ 115.4729
+ 185.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
@@ -236,34 +236,50 @@ endobj
 18 0 obj
 << /A << /S /URI
  /Type /Action
+ /URI (http://ironpython.net/browser/) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 62.69291
+ 142.7736
+ 96.59291
+ 154.7736 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Annot.NUMBER13': class PDFDictionary 
+19 0 obj
+<< /A << /S /URI
+ /Type /Action
  /URI (http://github.com/jschementi/ironruby/tree/master/Hosts/IronRuby.Rack/) >>
  /Border [ 0
  0
  0 ]
  /Rect [ 62.69291
- 94.77362
+ 99.77362
  127.1529
- 106.7736 ]
+ 111.7736 ]
  /Subtype /Link
  /Type /Annot >>
 endobj
 % 'Page2': class PDFPage 
-19 0 obj
+20 0 obj
 % Page dictionary
-<< /Annots [ 11 0 R
+<< /Annots [ 10 0 R
+ 11 0 R
  12 0 R
  13 0 R
- 14 0 R
  15 0 R
  16 0 R
  17 0 R
- 18 0 R ]
- /Contents 44 0 R
+ 18 0 R
+ 19 0 R ]
+ /Contents 40 0 R
  /MediaBox [ 0
  0
  595.2756
  841.8898 ]
- /Parent 42 0 R
+ /Parent 38 0 R
  /Resources << /Font 1 0 R
  /ProcSet [ /PDF
  /Text
@@ -274,8 +290,8 @@ endobj
  /Trans <<  >>
  /Type /Page >>
 endobj
-% 'Annot.NUMBER13': class PDFDictionary 
-20 0 obj
+% 'Annot.NUMBER14': class PDFDictionary 
+21 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://rubyonrails.org) >>
@@ -289,8 +305,8 @@ endobj
  /Subtype /Link
  /Type /Annot >>
 endobj
-% 'Annot.NUMBER14': class PDFDictionary 
-21 0 obj
+% 'Annot.NUMBER15': class PDFDictionary 
+22 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://sinatrarb.org) >>
@@ -304,8 +320,8 @@ endobj
  /Subtype /Link
  /Type /Annot >>
 endobj
-% 'Annot.NUMBER15': class PDFDictionary 
-22 0 obj
+% 'Annot.NUMBER16': class PDFDictionary 
+23 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://aspnet.codeplex.com/wikipage?title=Dynamic%20Language%20Support&referringTitle=Home&ProjectName=aspnet) >>
@@ -319,8 +335,8 @@ endobj
  /Subtype /Link
  /Type /Annot >>
 endobj
-% 'Annot.NUMBER16': class PDFDictionary 
-23 0 obj
+% 'Annot.NUMBER17': class PDFDictionary 
+24 0 obj
 << /A << /S /URI
  /Type /Action
  /URI (http://github.com/jschementi/ironrubymvc) >>
@@ -335,18 +351,18 @@ endobj
  /Type /Annot >>
 endobj
 % 'Page3': class PDFPage 
-24 0 obj
+25 0 obj
 % Page dictionary
-<< /Annots [ 20 0 R
- 21 0 R
+<< /Annots [ 21 0 R
  22 0 R
- 23 0 R ]
- /Contents 45 0 R
+ 23 0 R
+ 24 0 R ]
+ /Contents 41 0 R
  /MediaBox [ 0
  0
  595.2756
  841.8898 ]
- /Parent 42 0 R
+ /Parent 38 0 R
  /Resources << /Font 1 0 R
  /ProcSet [ /PDF
  /Text
@@ -357,216 +373,153 @@ endobj
  /Trans <<  >>
  /Type /Page >>
 endobj
-% 'R25': class PDFCatalog 
-25 0 obj
+% 'R26': class PDFCatalog 
+26 0 obj
 % Document Root
-<< /Outlines 27 0 R
- /PageLabels 46 0 R
+<< /Outlines 28 0 R
+ /PageLabels 42 0 R
  /PageMode /UseNone
- /Pages 42 0 R
+ /Pages 38 0 R
  /Type /Catalog >>
 endobj
-% 'R26': class PDFInfo 
-26 0 obj
+% 'R27': class PDFInfo 
+27 0 obj
 << /Author ()
- /CreationDate (D:20120207235130+05'00')
+ /CreationDate (D:20120208002946+05'00')
  /Creator (\(unspecified\))
  /Keywords ()
  /Producer (ReportLab PDF Library - www.reportlab.com)
  /Subject (\(unspecified\))
  /Title (Jimmy Schementi - Software Developer) >>
 endobj
-% 'R27': class PDFOutlines 
-27 0 obj
-<< /Count 19
- /First 28 0 R
- /Last 41 0 R
+% 'R28': class PDFOutlines 
+28 0 obj
+<< /Count 11
+ /First 29 0 R
+ /Last 37 0 R
  /Type /Outlines >>
 endobj
 % 'Outline.0': class OutlineEntryObject 
-28 0 obj
-<< /Dest [ 10 0 R
+29 0 obj
+<< /Dest [ 9 0 R
  /XYZ
  62.69291
  644.0236
  0 ]
- /Next 29 0 R
- /Parent 27 0 R
+ /Next 30 0 R
+ /Parent 28 0 R
  /Title (Skills) >>
 endobj
 % 'Outline.1': class OutlineEntryObject 
-29 0 obj
-<< /Count 9
- /Dest [ 10 0 R
+30 0 obj
+<< /Count 4
+ /Dest [ 9 0 R
  /XYZ
  62.69291
  581.0236
  0 ]
- /First 30 0 R
- /Last 37 0 R
- /Next 39 0 R
- /Parent 27 0 R
- /Prev 28 0 R
+ /First 31 0 R
+ /Last 33 0 R
+ /Next 35 0 R
+ /Parent 28 0 R
+ /Prev 29 0 R
  /Title (Experience) >>
 endobj
-% 'Outline.15.0': class OutlineEntryObject 
-30 0 obj
-<< /Count 1
- /Dest [ 10 0 R
+% 'Outline.10.0': class OutlineEntryObject 
+31 0 obj
+<< /Dest [ 9 0 R
  /XYZ
  62.69291
  548.0236
  0 ]
- /First 31 0 R
- /Last 31 0 R
  /Next 32 0 R
- /Parent 29 0 R
+ /Parent 30 0 R
  /Title (Lab49 - New York, NY) >>
 endobj
-% 'Outline.16.0': class OutlineEntryObject 
-31 0 obj
-<< /Dest [ 10 0 R
+% 'Outline.10.1': class OutlineEntryObject 
+32 0 obj
+<< /Dest [ 9 0 R
  /XYZ
  62.69291
- 518.0236
+ 308.0236
  0 ]
+ /Next 33 0 R
  /Parent 30 0 R
- /Title (Consultant \(8/2010 - Present\)) >>
+ /Prev 31 0 R
+ /Title (Microsoft - Redmond, WA) >>
 endobj
-% 'Outline.15.1': class OutlineEntryObject 
-32 0 obj
-<< /Count 2
- /Dest [ 10 0 R
+% 'Outline.10.2': class OutlineEntryObject 
+33 0 obj
+<< /Count 1
+ /Dest [ 20 0 R
+ /XYZ
+ 62.69291
+ 549.0236
+ 0 ]
+ /First 34 0 R
+ /Last 34 0 R
+ /Parent 30 0 R
+ /Prev 32 0 R
+ /Title (Worcester Polytechnic Institute, Worcester, MA) >>
+endobj
+% 'Outline.11.0': class OutlineEntryObject 
+34 0 obj
+<< /Dest [ 20 0 R
+ /XYZ
+ 62.69291
+ 411.0236
+ 0 ]
+ /Parent 33 0 R
+ /Title (General Electric, Danbury, CT) >>
+endobj
+% 'Outline.2': class OutlineEntryObject 
+35 0 obj
+<< /Dest [ 20 0 R
  /XYZ
  62.69291
  312.0236
  0 ]
- /First 33 0 R
- /Last 34 0 R
- /Next 35 0 R
- /Parent 29 0 R
+ /Next 36 0 R
+ /Parent 28 0 R
  /Prev 30 0 R
- /Title (Microsoft - Redmond, WA) >>
-endobj
-% 'Outline.17.0': class OutlineEntryObject 
-33 0 obj
-<< /Dest [ 10 0 R
- /XYZ
- 62.69291
- 282.0236
- 0 ]
- /Next 34 0 R
- /Parent 32 0 R
- /Title (Program Manager \(7/2007 - 7/2010\)) >>
-endobj
-% 'Outline.17.1': class OutlineEntryObject 
-34 0 obj
-<< /Dest [ 19 0 R
- /XYZ
- 62.69291
- 622.0236
- 0 ]
- /Parent 32 0 R
- /Prev 33 0 R
- /Title (Program Manager Intern \(Summer 2006\)) >>
-endobj
-% 'Outline.15.2': class OutlineEntryObject 
-35 0 obj
-<< /Count 1
- /Dest [ 19 0 R
- /XYZ
- 62.69291
- 547.0236
- 0 ]
- /First 36 0 R
- /Last 36 0 R
- /Next 37 0 R
- /Parent 29 0 R
- /Prev 32 0 R
- /Title (Worcester Polytechnic Institute AI Lab, Worcester, MA) >>
-endobj
-% 'Outline.18.0': class OutlineEntryObject 
-36 0 obj
-<< /Dest [ 19 0 R
- /XYZ
- 62.69291
- 517.0236
- 0 ]
- /Parent 35 0 R
- /Title (Lead Developer \(1-6/2007\)) >>
-endobj
-% 'Outline.15.3': class OutlineEntryObject 
-37 0 obj
-<< /Count 1
- /Dest [ 19 0 R
- /XYZ
- 62.69291
- 418.0236
- 0 ]
- /First 38 0 R
- /Last 38 0 R
- /Parent 29 0 R
- /Prev 35 0 R
- /Title (General Electric, Danbury, CT) >>
-endobj
-% 'Outline.19.0': class OutlineEntryObject 
-38 0 obj
-<< /Dest [ 19 0 R
- /XYZ
- 62.69291
- 388.0236
- 0 ]
- /Parent 37 0 R
- /Title (Information Management Leadership Program Intern \(Summer 2005\)) >>
-endobj
-% 'Outline.2': class OutlineEntryObject 
-39 0 obj
-<< /Dest [ 19 0 R
- /XYZ
- 62.69291
- 307.0236
- 0 ]
- /Next 40 0 R
- /Parent 27 0 R
- /Prev 29 0 R
  /Title (Education) >>
 endobj
 % 'Outline.3': class OutlineEntryObject 
-40 0 obj
-<< /Dest [ 19 0 R
+36 0 obj
+<< /Dest [ 20 0 R
  /XYZ
  62.69291
- 238.0236
+ 243.0236
  0 ]
- /Next 41 0 R
- /Parent 27 0 R
- /Prev 39 0 R
+ /Next 37 0 R
+ /Parent 28 0 R
+ /Prev 35 0 R
  /Title (Open-source projects) >>
 endobj
 % 'Outline.4': class OutlineEntryObject 
-41 0 obj
-<< /Dest [ 24 0 R
+37 0 obj
+<< /Dest [ 25 0 R
  /XYZ
  62.69291
  652.0236
  0 ]
- /Parent 27 0 R
- /Prev 40 0 R
+ /Parent 28 0 R
+ /Prev 36 0 R
  /Title (Additional information available upon request) >>
 endobj
-% 'R42': class PDFPages 
-42 0 obj
+% 'R38': class PDFPages 
+38 0 obj
 % page tree
 << /Count 3
- /Kids [ 10 0 R
- 19 0 R
- 24 0 R ]
+ /Kids [ 9 0 R
+ 20 0 R
+ 25 0 R ]
  /Type /Pages >>
 endobj
-% 'R43': class PDFStream 
-43 0 obj
+% 'R39': class PDFStream 
+39 0 obj
 % page stream
-<< /Length 6240 >>
+<< /Length 7132 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
@@ -671,25 +624,37 @@ BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Lab49 - New York, NY) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 503.0236 cm
+1 0 0 1 62.69291 512.0236 cm
 q
-BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Consultant \(8/2010 - Present\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Consultant ) Tj /F1 10 Tf (\(8/2010 - Present\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 485.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (A Large Consumer Bank) Tj T* ET
-Q
+1 0 0 1 62.69291 506.0236 cm
 Q
 q
-1 0 0 1 62.69291 470.0236 cm
+1 0 0 1 62.69291 506.0236 cm
+Q
+q
+1 0 0 1 62.69291 476.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 2 Tm  T* ET
 q
-1 0 0 1 20 0 cm
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ("A Large Consumer Bank") Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Build a web-based system for accessing data on positions, trades, and reports. ) Tj /F3 10 Tf (javascript, html, java) Tj T* ET
 Q
@@ -698,298 +663,408 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 454.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (A Global Financial Services Firm) Tj T* ET
-Q
+1 0 0 1 62.69291 470.0236 cm
 Q
 q
-1 0 0 1 62.69291 415.0236 cm
+1 0 0 1 62.69291 416.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 26 Tm  T* ET
 q
-1 0 0 1 20 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .574983 Tw (Analyzed all technical aspects of their Financial Advisor system, and delivered a written proposal for) Tj T* 0 Tw 1.50248 Tw (what technical changes would be required to position the project for future stability/maintainability,) Tj T* 0 Tw (and a timeline for how to execute the proposal.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 399.0236 cm
+1 0 0 1 6 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (An Asset Management Firm) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 62.69291 324.0236 cm
+1 0 0 1 23 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ("A Global Financial Services Firm") Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .360697 Tw (Analyzed all technical aspects of their Financial Advisor system, and delivered a written proposal for) Tj T* 0 Tw 1.25248 Tw (what technical changes would be required to position the project for future stability/maintainability,) Tj T* 0 Tw (and a timeline for how to execute the proposal.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 410.0236 cm
+Q
+q
+1 0 0 1 62.69291 320.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 62 Tm  T* ET
 q
-1 0 0 1 20 0 cm
+1 0 0 1 6 75 cm
 q
-BT 1 0 0 1 0 62 Tm 1.209983 Tw 12 TL /F1 10 Tf 0 0 0 rg (Built a web-based system to give the firm more insight into financial instruments using quantitative) Tj T* 0 Tw .57816 Tw (methods. The system allowed Quantitative Analysts to define quantitative models and visualizations,) Tj T* 0 Tw 4.804976 Tw (written in Python, using well-known data sources, computational procedures, and graphical) Tj T* 0 Tw 2.113059 Tw (visualization, provided by the system. The system managed the execution of these models, and) Tj T* 0 Tw 1.81152 Tw (presents the visualization of the resultant computations to the end user when requested. ) Tj /F3 10 Tf (Python,) Tj T* 0 Tw (IronPython, C#, .NET, Silverlight, SQLServer, quantitative analysis.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ("An Asset Management Firm") Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 62 Tm .995697 Tw 12 TL /F1 10 Tf 0 0 0 rg (Built a web-based system to give the firm more insight into financial instruments using quantitative) Tj T* 0 Tw .305433 Tw (methods. The system allowed Quantitative Analysts to define quantitative models and visualizations,) Tj T* 0 Tw 4.504976 Tw (written in Python, using well-known data sources, computational procedures, and graphical) Tj T* 0 Tw 1.88229 Tw (visualization, provided by the system. The system managed the execution of these models, and) Tj T* 0 Tw 1.580751 Tw (presents the visualization of the resultant computations to the end user when requested. ) Tj /F3 10 Tf (Python,) Tj T* 0 Tw (IronPython, C#, .NET, Silverlight, SQLServer, quantitative analysis.) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 294.0236 cm
+1 0 0 1 62.69291 320.0236 cm
+Q
+q
+1 0 0 1 62.69291 290.0236 cm
 q
 BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Microsoft - Redmond, WA) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 267.0236 cm
+1 0 0 1 62.69291 272.0236 cm
 q
-BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Program Manager \(7/2007 - 7/2010\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Program Manager ) Tj /F1 10 Tf (\(7/2007 - 7/2010\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 237.0236 cm
+1 0 0 1 62.69291 242.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.581976 Tw (Project manager and software developer for open-source programming languages, compilers, and) Tj T* 0 Tw (developer tools, specifically IronRuby, IronPython, and the Dynamic Language Runtime \(DLR\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 221.0236 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (IronRuby) Tj  T* ET
+1 0 0 1 62.69291 236.0236 cm
 Q
+q
+1 0 0 1 62.69291 236.0236 cm
 Q
 q
 1 0 0 1 62.69291 170.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 38 Tm  T* ET
 q
-1 0 0 1 20 0 cm
+1 0 0 1 6 51 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .317674 Tw (A a dynamic language port to the .NET framework. Executed release management, specification and) Tj T* 0 Tw .274524 Tw (documentation writing, evangelism through blogs, public appearances, and various social media, and) Tj T* 0 Tw .331412 Tw (development/compiler work where needed. 1.0 of the language shipped in Q2 2010, and 1.1 shipped) Tj T* 0 Tw (in Q3 2010.) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (IronRuby) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .789147 Tw (A dynamic language port to the .NET framework. Executed release management, specification and) Tj T* 0 Tw .001797 Tw (documentation writing, evangelism through blogs, public appearances, and various social media, and) Tj T* 0 Tw .117126 Tw (development/compiler work where needed. 1.0 of the language shipped in Q2 2010, and 1.1 shipped) Tj T* 0 Tw (in Q3 2010.) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 154.0236 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (DLR Hosts) Tj  T* ET
-Q
+1 0 0 1 62.69291 164.0236 cm
 Q
 q
-1 0 0 1 62.69291 115.0236 cm
+1 0 0 1 62.69291 110.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 26 Tm  T* ET
 q
-1 0 0 1 20 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .275433 Tw (Dynamic language hosting in various application-models: owned the spec-writing, coding, and testing) Tj T* 0 Tw 1.19811 Tw (of each project, which gave users ways of using dynamic languages in a first-class way in various) Tj T* 0 Tw (.NET application models.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 99.02362 cm
+1 0 0 1 6 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Open source process streamlining) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 39 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (DLR Hosts) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .002706 Tw (Dynamic language hosting in various application-models: owned the spec-writing, coding, and testing) Tj T* 0 Tw 1.01061 Tw (of each project, which gave users ways of using dynamic languages in a first-class way in various) Tj T* 0 Tw (.NET application models.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 104.0236 cm
+Q
+q
+1 0 0 1 62.69291 92.02362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Open source process streamlining) Tj T* ET
+Q
+Q
+q
 Q
 Q
  
 endstream
 endobj
-% 'R44': class PDFStream 
-44 0 obj
+% 'R40': class PDFStream 
+40 0 obj
 % page stream
-<< /Length 5821 >>
+<< /Length 6417 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 738.0236 cm
+1 0 0 1 62.69291 741.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 14 Tm  T* ET
+BT 1 0 0 1 6 11 Tm  T* ET
 q
-1 0 0 1 20 0 cm
+1 0 0 1 23 -3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.43816 Tw (Communicated with lawyers and management about what could be streamlined, and implemented) Tj T* 0 Tw (the changes.) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.165433 Tw (Communicated with lawyers and management about what could be streamlined, and implemented) Tj T* 0 Tw (the changes.) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 722.0236 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (Lang.NET) Tj  T* ET
-Q
+1 0 0 1 62.69291 735.0236 cm
 Q
 q
-1 0 0 1 62.69291 695.0236 cm
+1 0 0 1 62.69291 693.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 14 Tm  T* ET
 q
-1 0 0 1 20 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .069979 Tw (Conference organization: organized and executed a 3-day conference for programming language and) Tj T* 0 Tw (developer tool developers.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 679.0236 cm
+1 0 0 1 6 27 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Web Development) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 62.69291 664.0236 cm
+1 0 0 1 23 27 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Lang.NET) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.722976 Tw (Conference organization: organized and executed a 3-day conference for programming language) Tj T* 0 Tw (and developer tool developers.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 687.0236 cm
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 2 Tm  T* ET
 q
-1 0 0 1 20 0 cm
+1 0 0 1 6 15 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Designed and built the main websites for`IronRuby <) Tj 0 0 .501961 rg (http://ironruby.net) Tj 0 0 0 rg (>) Tj (`_ and ) Tj 0 0 .501961 rg (IronPython) Tj 0 0 0 rg (.) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Web Development) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Designed and built ) Tj 0 0 .501961 rg (IronRuby ) Tj 0 0 0 rg (and ) Tj 0 0 .501961 rg (IronPython) Tj 0 0 0 rg (.) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 634.0236 cm
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL .02229 Tw (ruby, python, C#, .NET, compilers, Silverlight, Rails, ASP.NET, project management, GIT, TFS, working at) Tj T* 0 Tw (a huge company) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 607.0236 cm
+1 0 0 1 62.69291 609.0236 cm
 q
-BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Program Manager Intern \(Summer 2006\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Program Manager Intern ) Tj /F1 10 Tf (\(Summer 2006\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 577.0236 cm
+1 0 0 1 62.69291 579.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .298314 Tw (Worked on the IronPython team, specifically working on Windows Presentation Foundation and ASP.NET) Tj T* 0 Tw (integration.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 559.0236 cm
+1 0 0 1 62.69291 561.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (python, C#, WPF, ASP.NET) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 529.0236 cm
+1 0 0 1 62.69291 531.0236 cm
 q
-BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Worcester Polytechnic Institute AI Lab, Worcester, MA) Tj T* ET
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Worcester Polytechnic Institute, Worcester, MA) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 502.0236 cm
+1 0 0 1 62.69291 513.0236 cm
 q
-BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Lead Developer \(1-6/2007\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Lead Developer - Artifical Intelligence Lab ) Tj /F1 10 Tf (\(1-6/2007\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 448.0236 cm
+1 0 0 1 62.69291 507.0236 cm
+Q
 q
-BT 1 0 0 1 0 38 Tm 2.043555 Tw 12 TL /F1 10 Tf 0 0 .501961 rg (Assistment) Tj 0 0 0 rg (: lead a redesign/rebuild of an intelligent tutoring system. Originally written in Java, it was) Tj T* 0 Tw 2.13436 Tw (redesigned using Ruby on Rails, which resulted in a system easier to manage and maintain, with a) Tj T* 0 Tw .571163 Tw (more-complete features than the original. The system was gradually rolled out to schools, and it is still in) Tj T* 0 Tw (use and actively developed today.) Tj T* ET
+1 0 0 1 62.69291 507.0236 cm
+Q
+q
+1 0 0 1 62.69291 441.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 62.69291 430.0236 cm
+1 0 0 1 23 51 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Assistment) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .319983 Tw (Lead a redesign/rebuild of an intelligent tutoring system. Originally written in Java, it was redesigned) Tj T* 0 Tw 4.226651 Tw (using Ruby on Rails, which resulted in a system easier to manage and maintain, with a) Tj T* 0 Tw .965984 Tw (more-complete features than the original. The system was gradually rolled out to schools, and it is) Tj T* 0 Tw (still in use and actively developed today.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 441.0236 cm
+Q
+q
+1 0 0 1 62.69291 423.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (ruby, Rails, intelligent-tutoring systems, user-interface design, Java, HTML/CSS, JavaScript) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 400.0236 cm
+1 0 0 1 62.69291 396.0236 cm
 q
-BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (General Electric, Danbury, CT) Tj T* ET
+BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (General Electric, Danbury, CT) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 373.0236 cm
+1 0 0 1 62.69291 378.0236 cm
 q
-BT 1 0 0 1 0 2.5 Tm 15 TL /F4 12.5 Tf 0 0 0 rg (Information Management Leadership Program Intern \(Summer 2005\)) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Information Management Leadership Program Intern ) Tj /F1 10 Tf (\(Summer 2005\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 355.0236 cm
+1 0 0 1 62.69291 360.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Lead a user-acceptance testing effort between teams in US and India.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 337.0236 cm
+1 0 0 1 62.69291 342.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (project management, user-acceptance testing) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 319.0236 cm
+1 0 0 1 62.69291 324.0236 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (See my `LinkedIn profile <) Tj (http://www.linkedin.com/in/jschementi) Tj (>) Tj (`_ for a more-complete job history.) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (See my ) Tj 0 0 .501961 rg (LinkedIn profile ) Tj 0 0 0 rg (for a more-complete job history.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 286.0236 cm
+1 0 0 1 62.69291 291.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Education) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 268.0236 cm
+1 0 0 1 62.69291 273.0236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Masters, Computer Science) Tj /F1 10 Tf (, Worcester Polytechnic Institute, 2005-2007) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 250.0236 cm
+1 0 0 1 62.69291 255.0236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Bachelors, Computer Science) Tj /F1 10 Tf (, Worcester Polytechnic Institute, 2002 - 2006) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 217.0236 cm
+1 0 0 1 62.69291 222.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Open-source projects) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 199.0236 cm
+1 0 0 1 62.69291 204.0236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (IronRuby) Tj  T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 184.0236 cm
+1 0 0 1 62.69291 189.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 BT 1 0 0 1 0 2 Tm  T* ET
@@ -1004,13 +1079,13 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 168.0236 cm
+1 0 0 1 62.69291 173.0236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (IronPython) Tj  T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 153.0236 cm
+1 0 0 1 62.69291 158.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 BT 1 0 0 1 0 2 Tm  T* ET
@@ -1025,13 +1100,13 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 137.0236 cm
+1 0 0 1 62.69291 142.0236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (Gestalt) Tj  T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 110.0236 cm
+1 0 0 1 62.69291 115.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 BT 1 0 0 1 0 14 Tm  T* ET
@@ -1046,7 +1121,7 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 94.02362 cm
+1 0 0 1 62.69291 99.02362 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (ironruby-rack) Tj  T* ET
 Q
@@ -1054,8 +1129,8 @@ Q
  
 endstream
 endobj
-% 'R45': class PDFStream 
-45 0 obj
+% 'R41': class PDFStream 
+41 0 obj
 % page stream
 << /Length 1542 >>
 stream
@@ -1125,94 +1200,90 @@ Q
  
 endstream
 endobj
-% 'R46': class PDFPageLabels 
-46 0 obj
+% 'R42': class PDFPageLabels 
+42 0 obj
 % Document Root
 << /Nums [ 0
- 47 0 R
+ 43 0 R
  1
- 48 0 R
+ 44 0 R
  2
- 49 0 R ] >>
+ 45 0 R ] >>
 endobj
-% 'R47': class PDFPageLabel 
-47 0 obj
+% 'R43': class PDFPageLabel 
+43 0 obj
 % None
 << /S /D
  /St 1 >>
 endobj
-% 'R48': class PDFPageLabel 
-48 0 obj
+% 'R44': class PDFPageLabel 
+44 0 obj
 % None
 << /S /D
  /St 2 >>
 endobj
-% 'R49': class PDFPageLabel 
-49 0 obj
+% 'R45': class PDFPageLabel 
+45 0 obj
 % None
 << /S /D
  /St 3 >>
 endobj
 xref
-0 50
+0 46
 0000000000 65535 f
 0000000113 00000 n
-0000000245 00000 n
-0000000410 00000 n
-0000000597 00000 n
-0000000841 00000 n
-0000001073 00000 n
-0000001254 00000 n
-0000001455 00000 n
-0000001692 00000 n
-0000001951 00000 n
-0000002289 00000 n
-0000002535 00000 n
-0000002773 00000 n
-0000003013 00000 n
-0000003253 00000 n
-0000003492 00000 n
-0000003733 00000 n
-0000003983 00000 n
-0000004258 00000 n
-0000004637 00000 n
-0000004879 00000 n
-0000005119 00000 n
-0000005448 00000 n
-0000005693 00000 n
-0000006022 00000 n
-0000006181 00000 n
-0000006465 00000 n
-0000006591 00000 n
-0000006758 00000 n
-0000006989 00000 n
-0000007215 00000 n
-0000007395 00000 n
-0000007639 00000 n
-0000007838 00000 n
-0000008040 00000 n
-0000008314 00000 n
-0000008490 00000 n
-0000008725 00000 n
-0000008935 00000 n
-0000009120 00000 n
-0000009316 00000 n
-0000009506 00000 n
-0000009632 00000 n
-0000015971 00000 n
-0000021891 00000 n
-0000023536 00000 n
-0000023655 00000 n
-0000023732 00000 n
-0000023809 00000 n
+0000000246 00000 n
+0000000411 00000 n
+0000000598 00000 n
+0000000842 00000 n
+0000001074 00000 n
+0000001267 00000 n
+0000001504 00000 n
+0000001763 00000 n
+0000002100 00000 n
+0000002346 00000 n
+0000002584 00000 n
+0000002824 00000 n
+0000003052 00000 n
+0000003254 00000 n
+0000003511 00000 n
+0000003750 00000 n
+0000003991 00000 n
+0000004241 00000 n
+0000004516 00000 n
+0000004904 00000 n
+0000005146 00000 n
+0000005386 00000 n
+0000005715 00000 n
+0000005960 00000 n
+0000006289 00000 n
+0000006448 00000 n
+0000006732 00000 n
+0000006858 00000 n
+0000007024 00000 n
+0000007254 00000 n
+0000007437 00000 n
+0000007638 00000 n
+0000007890 00000 n
+0000008065 00000 n
+0000008250 00000 n
+0000008446 00000 n
+0000008636 00000 n
+0000008761 00000 n
+0000015992 00000 n
+0000022508 00000 n
+0000024153 00000 n
+0000024272 00000 n
+0000024349 00000 n
+0000024426 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
- [(Via\222$\027q\3235KE\226\012\311\004\014) (Via\222$\027q\3235KE\226\012\311\004\014)] 
+ [(H?4\342\337\365\206&\366\\\205\260\202\317\227\276) (H?4\342\337\365\206&\366\\\205\260\202\317\227\276)] 
 
- /Info 26 0 R
- /Root 25 0 R
- /Size 50 >>
+ /Info 27 0 R
+ /Root 26 0 R
+ /Size 46 >>
 startxref
-23856
+24473
 %%EOF
